@@ -7,6 +7,7 @@ Les cours de comptabilité en ligne d'ADRAR Formation (titre professionnel Secr�
 - `design-system/` : le design system « Cahier de Compta » (couleurs, polices, composants `cc-*`), tiré du PowerPoint d'introduction.
 - `01-introduction/` : chapitre 01, Introduction à la comptabilité.
 - `02-principes-comptables/` : chapitre 02, Principes comptables et règles de confidentialité.
+- `03-dematerialisation/` : chapitre 03, La dématérialisation, avec son quiz (repris d'Adxel). À partir de ce chapitre, le module envoie la note du quiz à la plateforme.
 - `index.html` : la page d'accueil qui liste les chapitres.
 - `serve.ps1` : un petit serveur pour prévisualiser un chapitre en local.
 
