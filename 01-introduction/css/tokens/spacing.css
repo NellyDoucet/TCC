@@ -1,0 +1,39 @@
+:root {
+  /* Echelle du design system */
+  --pas-1: 4px;
+  --pas-2: 8px;
+  --pas-3: 16px;
+  --pas-4: 24px;
+  --pas-5: 40px;
+  --pas-6: 64px;
+  --ligne-cahier: 40px;
+  --angle-droit: 0px;
+  --trait-fin: 1px;
+  --trait-regle: 2px;
+
+  /* Noms du moteur */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Tout est a angle droit, sauf la barre de progression */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 999px;
+
+  --shadow-card: none;
+  --shadow-soft: none;
+
+  --sidebar-width: 300px;
+  --header-height: 72px;
+  --content-max-width: 1140px;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+}

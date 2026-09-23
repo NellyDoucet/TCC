@@ -1,0 +1,10 @@
+{
+  "titreModule": "Comptabilité — 01. Introduction",
+  "chapitres": [
+    { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
+    { "id": "pourquoi", "numero": "01", "titre": "Pourquoi ?", "fichier": "pages/01-pourquoi.html", "icone": "circle-help" },
+    { "id": "pour-qui", "numero": "02", "titre": "Pour qui ?", "fichier": "pages/02-pour-qui.html", "icone": "users" },
+    { "id": "histoire", "numero": "03", "titre": "Histoire de la comptabilité", "fichier": "pages/03-histoire.html", "icone": "scroll-text" },
+    { "id": "conclusion", "numero": null, "titre": "Conclusion", "fichier": "pages/04-conclusion.html", "icone": "flag" }
+  ]
+}

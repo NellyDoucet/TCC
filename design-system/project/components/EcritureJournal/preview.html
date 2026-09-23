@@ -1,0 +1,23 @@
+<!-- @dsCard group="Tableaux comptables" height=300 subtitle="Ajout — écriture au journal" -->
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><style>body{margin:0;background:var(--papier);color:var(--encre)}</style></head>
+<body>
+<div class="cc-cahier">
+  <div class="cc-journal">
+    <h3 class="cc-journal__titre">JOURNAL</h3>
+    <div class="cc-tableau-wrap">
+      <table class="cc-tableau">
+        <thead><tr><th>Date</th><th>N° compte</th><th>Libellé</th><th>Débit</th><th>Crédit</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="3">05/01/2025</td><td class="cc-compte">607</td><td class="cc-libelle">Achats de marchandises</td><td class="cc-montant">1 000,00 €</td><td class="cc-montant"></td></tr>
+          <tr><td class="cc-compte">44566</td><td class="cc-libelle">TVA déductible sur ABS</td><td class="cc-montant">200,00 €</td><td class="cc-montant"></td></tr>
+          <tr><td class="cc-compte">401</td><td class="cc-libelle cc-credit-libelle">Fournisseurs</td><td class="cc-montant"></td><td class="cc-montant">1 200,00 €</td></tr>
+          <tr class="cc-separateur"><td colspan="5">Facture n° 125 — fournisseur Durand</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

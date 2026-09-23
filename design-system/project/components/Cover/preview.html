@@ -1,0 +1,48 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--papier); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 300px; }
+  .cover svg { position: absolute; left: 480px; top: 0; }
+  .corail { fill: var(--corail); }
+  .jaune { fill: var(--jaune); }
+  .teal { fill: var(--teal); }
+  .encre { fill: var(--encre); }
+  .corail-clair { fill: var(--corail-clair); }
+  .bloc { rx: var(--angle-droit); }
+  .ligne { stroke: var(--papier); stroke-width: var(--trait-regle); }
+  .texte { position: absolute; left: 40px; bottom: 32px; max-width: 440px; }
+  .nom { margin: 0; font-family: var(--font-pinceau); font-weight: 400; font-size: 80px; line-height: 0.95; color: var(--encre); }
+  .accroche { margin: 16px 0 0; font-family: var(--font-main); font-size: 14px; line-height: 1.4; color: var(--encre-douce); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <svg width="480" height="300" viewBox="0 0 480 300" aria-hidden="true">
+    <!--
+      blocs : corail 280×64, jaune 280×64, teal 280×64, encre 320×84 (déborde en bas à droite), corail-clair 120×64 (déborde à droite) ; côtés en multiples de pas-6 / ligne-cahier
+      disposition : escalier descendant vers la droite, chaque marche décalée d'un pas-5 (40 px), comme la ListeEscalier #1 → #5
+      motif : cinq lignes verticales du cahier (papier, trait-regle) au pas ligne-cahier = 40 px, qui découpent les blocs — le cahier ligné est le signe distinctif du cours
+      échelles : pas-5 40 px, pas-6 64 px, ligne-cahier 40 px, rayon angle-droit 0
+    -->
+    <rect class="bloc corail" x="40" y="24" width="280" height="64"/>
+    <rect class="bloc corail-clair" x="360" y="24" width="120" height="64"/>
+    <rect class="bloc jaune" x="80" y="88" width="280" height="64"/>
+    <rect class="bloc teal" x="120" y="152" width="280" height="64"/>
+    <rect class="bloc encre" x="160" y="216" width="320" height="84"/>
+    <line class="ligne" x1="240" y1="0" x2="240" y2="300"/>
+    <line class="ligne" x1="280" y1="0" x2="280" y2="300"/>
+    <line class="ligne" x1="320" y1="0" x2="320" y2="300"/>
+    <line class="ligne" x1="360" y1="0" x2="360" y2="300"/>
+    <line class="ligne" x1="400" y1="0" x2="400" y2="300"/>
+  </svg>
+  <div class="texte">
+    <h1 class="nom">Cahier de<br>Compta</h1>
+    <p class="accroche">Le cahier ligné des cours de comptabilité ADRAR Formation.</p>
+  </div>
+</div>
+</body>
+</html>
