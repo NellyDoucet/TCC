@@ -1,0 +1,14 @@
+{
+  "titreModule": "Comptabilité — 04. Le Compte de Résultat",
+  "chapitres": [
+    { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
+    { "id": "produits-charges", "numero": "01", "titre": "Produits et charges", "fichier": "pages/01-produits-charges.html", "icone": "scale" },
+    { "id": "resultat", "numero": "02", "titre": "Le résultat", "fichier": "pages/02-resultat.html", "icone": "calculator" },
+    { "id": "schema", "numero": "03", "titre": "Présentation schématique", "fichier": "pages/03-schema.html", "icone": "table" },
+    { "id": "application-1", "numero": "A1", "titre": "Application 1 — IKOM", "fichier": "pages/04-application.html", "icone": "pencil", "aExercice": true, "exerciceSrc": "db/quiz/app-1.json" },
+    { "id": "application-2", "numero": "A2", "titre": "Application 2", "fichier": "pages/04-application.html", "icone": "pencil", "aExercice": true, "exerciceSrc": "db/quiz/app-2.json" },
+    { "id": "application-3", "numero": "A3", "titre": "Application 3", "fichier": "pages/04-application.html", "icone": "pencil", "aExercice": true, "exerciceSrc": "db/quiz/app-3.json" },
+    { "id": "application-4", "numero": "A4", "titre": "Application 4", "fichier": "pages/04-application.html", "icone": "pencil", "aExercice": true, "exerciceSrc": "db/quiz/app-4.json" },
+    { "id": "conclusion", "numero": null, "titre": "Conclusion", "fichier": "pages/05-conclusion.html", "icone": "flag" }
+  ]
+}

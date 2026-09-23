@@ -8,6 +8,7 @@ Les cours de comptabilité en ligne d'ADRAR Formation (titre professionnel Secr�
 - `01-introduction/` : chapitre 01, Introduction à la comptabilité.
 - `02-principes-comptables/` : chapitre 02, Principes comptables et règles de confidentialité.
 - `03-dematerialisation/` : chapitre 03, La dématérialisation, avec son quiz (repris d'Adxel). À partir de ce chapitre, le module envoie la note du quiz à la plateforme.
+- `04-compte-de-resultat/` : chapitre 04, Le Compte de Résultat, avec les 4 applications (classement, totaux, résultat). Le moteur d'exercices y gagne un type « classement » (un menu déroulant par élément).
 - `index.html` : la page d'accueil qui liste les chapitres.
 - `serve.ps1` : un petit serveur pour prévisualiser un chapitre en local.
 
