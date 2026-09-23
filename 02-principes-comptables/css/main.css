@@ -1,0 +1,29 @@
+/* Point d'entree unique. Moteur repris du module Administration des ventes,
+   habille avec le design system "Cahier de Compta" (cours de comptabilite). */
+
+/* Tokens */
+@import url('tokens/colors.css');
+@import url('tokens/typography.css');
+@import url('tokens/spacing.css');
+@import url('tokens/patterns.css');
+
+/* Base */
+@import url('base/reset.css');
+@import url('base/base.css');
+
+/* Typographie */
+@import url('typography/typography.css');
+
+/* Layout */
+@import url('layout/shell.css');
+@import url('layout/header.css');
+@import url('layout/sidebar.css');
+@import url('layout/cahier-shell.css');
+
+/* Composants */
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/progressbar.css');
+@import url('components/nav.css');
+@import url('components/cahier.css');
+@import url('components/module.css');

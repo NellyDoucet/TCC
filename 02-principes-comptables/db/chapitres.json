@@ -1,0 +1,9 @@
+{
+  "titreModule": "Comptabilité — 02. Principes comptables et règles de confidentialité",
+  "chapitres": [
+    { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
+    { "id": "principes", "numero": "01", "titre": "Les principes comptables", "fichier": "pages/01-principes.html", "icone": "scale" },
+    { "id": "confidentialite", "numero": "02", "titre": "Les règles de confidentialité", "fichier": "pages/02-confidentialite.html", "icone": "lock" },
+    { "id": "conclusion", "numero": null, "titre": "Conclusion", "fichier": "pages/03-conclusion.html", "icone": "flag" }
+  ]
+}

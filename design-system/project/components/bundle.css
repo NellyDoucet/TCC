@@ -67,11 +67,14 @@
 .cc-intercalaire__titre {
   font-family: var(--font-capitales);
   font-weight: 400;
-  font-size: clamp(36px, 7vw, 56px);
+  font-size: clamp(28px, 4.2vw, 56px);
   line-height: 1.1;
   color: var(--corail);
   text-shadow: var(--ombre-titre);
   margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  min-width: 0;
 }
 .cc-intercalaire--jaune .cc-intercalaire__titre { font-family: var(--font-main); color: var(--jaune); }
 
