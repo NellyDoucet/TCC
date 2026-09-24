@@ -277,12 +277,12 @@
           '<div class="access-gate__card">' +
             iconMarkup('lock', 'access-gate__icon') +
             '<h1 class="access-gate__title">Accès protégé</h1>' +
-            '<p class="access-gate__text">Saisis le code communiqué par ta formatrice pour ouvrir « ' + chap.titre + ' ».</p>' +
+            '<p class="access-gate__text">Saisissez le code communiqué par votre formateur pour ouvrir « ' + chap.titre + ' ».</p>' +
             '<form class="access-gate__form" id="access-gate-form-inline" autocomplete="off">' +
               '<input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" class="access-gate__input" id="access-gate-input-inline" placeholder="Code" aria-label="Code d\'accès">' +
               '<button type="submit" class="btn btn-primary">Valider</button>' +
             '</form>' +
-            '<p class="access-gate__error" id="access-gate-error-inline">Code incorrect, réessaie.</p>' +
+            '<p class="access-gate__error" id="access-gate-error-inline">Code incorrect, réessayez.</p>' +
           '</div>' +
         '</div>' +
       '</div>';
