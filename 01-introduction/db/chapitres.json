@@ -1,5 +1,7 @@
 {
   "titreModule": "Comptabilité — 01. Introduction",
+  "sommaireHref": "../index.html",
+  "moduleSuivant": { "titre": "Principes comptables et règles de confidentialité", "href": "../02-principes-comptables/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "pourquoi", "numero": "01", "titre": "Pourquoi ?", "fichier": "pages/01-pourquoi.html", "icone": "circle-help" },

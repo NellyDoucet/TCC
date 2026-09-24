@@ -1,5 +1,7 @@
 {
   "titreModule": "Comptabilité — 02. Principes comptables et règles de confidentialité",
+  "sommaireHref": "../index.html",
+  "moduleSuivant": { "titre": "La dématérialisation", "href": "../03-dematerialisation/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "principes", "numero": "01", "titre": "Les principes comptables", "fichier": "pages/01-principes.html", "icone": "scale" },

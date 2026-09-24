@@ -7,8 +7,8 @@
   background-image: repeating-linear-gradient(90deg, transparent 0 calc(var(--ligne-cahier) - 1px), var(--papier-ligne) calc(var(--ligne-cahier) - 1px) var(--ligne-cahier));
   color: var(--encre);
   font-family: var(--font-main);
-  font-size: 22px;
-  line-height: 1.45;
+  font-size: 26px;
+  line-height: 1.5;
   padding: var(--pas-5) var(--pas-3);
 }
 .cc-cahier img, .cc-img { border-radius: var(--angle-droit); max-width: 100%; display: block; }
@@ -126,6 +126,32 @@
 .cc-attention__icone { width: 100%; height: auto; }
 .cc-attention__texte { margin: 0; color: var(--encre); }
 .cc-attention__amorce { color: var(--corail-clair); text-shadow: var(--ombre-titre); font-size: 1.15em; }
+
+/* ---------- En-tete de principe (icone + titre) ---------- */
+.cc-principe-entete {
+  display: flex;
+  align-items: center;
+  gap: var(--pas-4);
+  margin-bottom: var(--pas-5);
+}
+.cc-principe-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--corail);
+  color: var(--color-white);
+  box-shadow: var(--ombre-titre);
+}
+.cc-principe-icone svg { width: 30px; height: 30px; stroke-width: 2; }
+.cc-principe-entete .cc-titre-section { margin: 0; text-wrap: pretty; }
+@media (max-width: 600px) {
+  .cc-principe-icone { width: 48px; height: 48px; }
+  .cc-principe-icone svg { width: 22px; height: 22px; }
+}
 
 /* ---------- Schémas & mise en page ---------- */
 .cc-schema { display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: "haut haut haut" "gauche fleches droite"; gap: var(--pas-3) var(--pas-4); align-items: center; text-align: center; }

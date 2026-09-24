@@ -15,7 +15,7 @@
   --text-h2: 400 32px/1.2 var(--font-pinceau);
   --text-h3: 700 17px/1.35 var(--font-chiffres);
   --text-h4: 700 16px/1.4 var(--font-chiffres);
-  --text-body: 400 22px/1.45 var(--font-main);
+  --text-body: 400 26px/1.5 var(--font-main);
   --text-body-sm: 600 15px/1.45 var(--font-chiffres);
   --text-label: 700 13px/1.2 var(--font-chiffres);
 }

@@ -136,10 +136,16 @@
       if (chap.aExercice) {
         isDone = prog && prog.checked;
       }
+      var statusIcon = 'check-circle-2';
+      var statusExtra = isDone ? '' : ' is-empty';
+      if (chap.codeRequis && !isChapterUnlocked(chap)) {
+        statusIcon = 'lock';
+        statusExtra = '';
+      }
       a.innerHTML =
         iconMarkup(chap.icone, 'sidebar-link__icon') +
         '<span>' + (chap.numero ? chap.numero + '. ' : '') + chap.titre + '</span>' +
-        iconMarkup('check-circle-2', 'sidebar-link__status' + (isDone ? '' : ' is-empty'));
+        iconMarkup(statusIcon, 'sidebar-link__status' + statusExtra);
       li.appendChild(a);
       els.sidebarList.appendChild(li);
     });
@@ -184,6 +190,27 @@
       nextBtn.className = 'btn btn-primary';
       nextBtn.innerHTML = next.titre + ' ' + iconMarkup('arrow-right', 'icon');
       nav.appendChild(nextBtn);
+    } else {
+      var endGroup = document.createElement('div');
+      endGroup.className = 'page-nav__end';
+
+      if (state.sommaireHref) {
+        var menuBtn = document.createElement('a');
+        menuBtn.href = state.sommaireHref;
+        menuBtn.className = 'btn btn-ghost';
+        menuBtn.innerHTML = iconMarkup('layout-grid', 'icon') + ' Retour au sommaire';
+        endGroup.appendChild(menuBtn);
+      }
+
+      if (state.moduleSuivant) {
+        var moduleBtn = document.createElement('a');
+        moduleBtn.href = state.moduleSuivant.href;
+        moduleBtn.className = 'btn btn-primary';
+        moduleBtn.innerHTML = state.moduleSuivant.titre + ' ' + iconMarkup('arrow-right', 'icon');
+        endGroup.appendChild(moduleBtn);
+      }
+
+      nav.appendChild(endGroup);
     }
 
     return nav;
@@ -226,9 +253,78 @@
     });
   }
 
+  function gateStorageKey(chapId) {
+    return 'adrar-tcc-unlock-04-compte-de-resultat-' + chapId;
+  }
+
+  function isChapterUnlocked(chap) {
+    if (!chap.codeRequis) {
+      return true;
+    }
+    try {
+      return window.localStorage.getItem(gateStorageKey(chap.id)) === '1';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function renderInlineGate(chap) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'app-main-inner';
+    wrapper.innerHTML =
+      '<div class="page">' +
+        '<div class="access-gate access-gate--inline">' +
+          '<div class="access-gate__card">' +
+            iconMarkup('lock', 'access-gate__icon') +
+            '<h1 class="access-gate__title">Accès protégé</h1>' +
+            '<p class="access-gate__text">Saisis le code communiqué par ta formatrice pour ouvrir « ' + chap.titre + ' ».</p>' +
+            '<form class="access-gate__form" id="access-gate-form-inline" autocomplete="off">' +
+              '<input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" class="access-gate__input" id="access-gate-input-inline" placeholder="Code" aria-label="Code d\'accès">' +
+              '<button type="submit" class="btn btn-primary">Valider</button>' +
+            '</form>' +
+            '<p class="access-gate__error" id="access-gate-error-inline">Code incorrect, réessaie.</p>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
+    els.content.innerHTML = '';
+    els.content.appendChild(wrapper);
+    els.content.scrollTop = 0;
+
+    if (window.Icons) {
+      window.Icons.refresh();
+    }
+
+    var form = wrapper.querySelector('#access-gate-form-inline');
+    var input = wrapper.querySelector('#access-gate-input-inline');
+    var error = wrapper.querySelector('#access-gate-error-inline');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (input.value.trim() === chap.codeRequis) {
+        try {
+          window.localStorage.setItem(gateStorageKey(chap.id), '1');
+        } catch (e) {}
+        loadChapter(chap.id);
+      } else {
+        error.classList.add('is-visible');
+        input.classList.add('is-invalid');
+        input.select();
+      }
+    });
+  }
+
   function loadChapter(chapId) {
     var chap = findChapter(chapId) || state.chapitres[0];
     state.currentId = chap.id;
+
+    if (!isChapterUnlocked(chap)) {
+      renderSidebar();
+      renderInlineGate(chap);
+      return Promise.resolve();
+    }
+
+    renderSidebar();
 
     return fetchHTML(chap.fichier).then(function (html) {
       els.content.innerHTML = '<div class="app-main-inner"><div class="page">' + html + '</div></div>';
@@ -285,6 +381,8 @@
     restoreProgress();
     fetchJSON('db/chapitres.json').then(function (data) {
       state.chapitres = data.chapitres;
+      state.sommaireHref = data.sommaireHref || null;
+      state.moduleSuivant = data.moduleSuivant || null;
       renderSidebar();
       bindGlobalEvents();
       updateProgressUI();

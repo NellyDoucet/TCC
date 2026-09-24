@@ -7,8 +7,8 @@
   background-image: repeating-linear-gradient(90deg, transparent 0 calc(var(--ligne-cahier) - 1px), var(--papier-ligne) calc(var(--ligne-cahier) - 1px) var(--ligne-cahier));
   color: var(--encre);
   font-family: var(--font-main);
-  font-size: 22px;
-  line-height: 1.45;
+  font-size: 26px;
+  line-height: 1.5;
   padding: var(--pas-5) var(--pas-3);
 }
 .cc-cahier img, .cc-img { border-radius: var(--angle-droit); max-width: 100%; display: block; }

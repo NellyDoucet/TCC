@@ -1,0 +1,113 @@
+/* Portail de code d'acces : protege l'ouverture d'un chapitre (et, dans le
+   module 04, de chaque application) par un code communique par la formatrice.
+   Simple filtre cote client (pas une securite reelle), memorise sur
+   l'appareil via localStorage une fois le bon code saisi. */
+
+.access-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+  background-color: var(--papier);
+  background-image: repeating-linear-gradient(90deg, transparent 0 calc(var(--ligne-cahier) - 1px), var(--papier-ligne) calc(var(--ligne-cahier) - 1px) var(--ligne-cahier));
+}
+
+.access-gate.is-hidden {
+  display: none;
+}
+
+.access-gate__card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card, 0 18px 40px -12px rgba(0, 0, 0, 0.25));
+  padding: var(--space-6) var(--space-5);
+  text-align: center;
+}
+
+.access-gate__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--corail);
+  color: var(--color-white);
+  margin-bottom: var(--space-4);
+}
+
+.access-gate__icon svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 2;
+}
+
+.access-gate__title {
+  font: var(--text-h3);
+  color: var(--text-on-light);
+  margin: 0 0 var(--space-2);
+}
+
+.access-gate__text {
+  font: var(--text-body-sm);
+  color: var(--text-on-light-soft);
+  margin: 0 0 var(--space-5);
+}
+
+.access-gate__form {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+.access-gate__input {
+  width: 120px;
+  padding: var(--space-2) var(--space-3);
+  border: 2px solid var(--surface-card-line);
+  border-radius: var(--radius-sm);
+  background: var(--surface-card);
+  font: var(--text-body);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: var(--text-on-light);
+  transition: border-color var(--transition-fast);
+}
+
+.access-gate__input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.access-gate__input.is-invalid {
+  border-color: var(--state-error, var(--corail-fonce));
+}
+
+.access-gate__error {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 0;
+  font: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--state-error, var(--corail-fonce));
+}
+
+.access-gate__error.is-visible {
+  display: flex;
+}
+
+/* Variante inline : utilisee dans le contenu (#app-content) pour proteger
+   une page individuelle (ex. une application) sans masquer tout le shell. */
+.access-gate--inline {
+  position: static;
+  z-index: auto;
+  background: none;
+  padding: var(--space-7) var(--space-4);
+}

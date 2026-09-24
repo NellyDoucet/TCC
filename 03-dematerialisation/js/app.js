@@ -184,6 +184,27 @@
       nextBtn.className = 'btn btn-primary';
       nextBtn.innerHTML = next.titre + ' ' + iconMarkup('arrow-right', 'icon');
       nav.appendChild(nextBtn);
+    } else {
+      var endGroup = document.createElement('div');
+      endGroup.className = 'page-nav__end';
+
+      if (state.sommaireHref) {
+        var menuBtn = document.createElement('a');
+        menuBtn.href = state.sommaireHref;
+        menuBtn.className = 'btn btn-ghost';
+        menuBtn.innerHTML = iconMarkup('layout-grid', 'icon') + ' Retour au sommaire';
+        endGroup.appendChild(menuBtn);
+      }
+
+      if (state.moduleSuivant) {
+        var moduleBtn = document.createElement('a');
+        moduleBtn.href = state.moduleSuivant.href;
+        moduleBtn.className = 'btn btn-primary';
+        moduleBtn.innerHTML = state.moduleSuivant.titre + ' ' + iconMarkup('arrow-right', 'icon');
+        endGroup.appendChild(moduleBtn);
+      }
+
+      nav.appendChild(endGroup);
     }
 
     return nav;
@@ -285,6 +306,8 @@
     restoreProgress();
     fetchJSON('db/chapitres.json').then(function (data) {
       state.chapitres = data.chapitres;
+      state.sommaireHref = data.sommaireHref || null;
+      state.moduleSuivant = data.moduleSuivant || null;
       renderSidebar();
       bindGlobalEvents();
       updateProgressUI();

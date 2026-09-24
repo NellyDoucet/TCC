@@ -8,6 +8,53 @@
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="access-gate" id="access-gate">
+  <div class="access-gate__card">
+    <span class="access-gate__icon" data-lucide="lock"></span>
+    <h1 class="access-gate__title">Accès protégé</h1>
+    <p class="access-gate__text">Saisis le code communiqué par ta formatrice pour ouvrir ce chapitre.</p>
+    <form class="access-gate__form" id="access-gate-form" autocomplete="off">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" class="access-gate__input" id="access-gate-input" placeholder="Code" aria-label="Code d'accès">
+      <button type="submit" class="btn btn-primary">Valider</button>
+    </form>
+    <p class="access-gate__error" id="access-gate-error">Code incorrect, réessaie.</p>
+  </div>
+</div>
+<script>
+(function () {
+  'use strict';
+  var STORAGE_KEY = 'adrar-tcc-unlock-01-introduction';
+  var CODE = '935';
+  var gate = document.getElementById('access-gate');
+  var form = document.getElementById('access-gate-form');
+  var input = document.getElementById('access-gate-input');
+  var error = document.getElementById('access-gate-error');
+
+  function unlock() {
+    try { window.localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+    gate.classList.add('is-hidden');
+  }
+
+  try {
+    if (window.localStorage.getItem(STORAGE_KEY) === '1') {
+      gate.classList.add('is-hidden');
+    }
+  } catch (e) {}
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (input.value.trim() === CODE) {
+      error.classList.remove('is-visible');
+      input.classList.remove('is-invalid');
+      unlock();
+    } else {
+      error.classList.add('is-visible');
+      input.classList.add('is-invalid');
+      input.select();
+    }
+  });
+})();
+</script>
 <div class="app-shell">
   <aside class="app-sidebar" id="app-sidebar">
     <div class="sidebar-brand">

@@ -1,5 +1,7 @@
 {
   "titreModule": "Comptabilité — 03. La dématérialisation",
+  "sommaireHref": "../index.html",
+  "moduleSuivant": { "titre": "Le Compte de Résultat", "href": "../04-compte-de-resultat/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "hier", "numero": "01", "titre": "Hier : la comptabilité manuscrite", "fichier": "pages/01-hier.html", "icone": "pen-line" },
