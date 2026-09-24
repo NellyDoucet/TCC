@@ -1,0 +1,52 @@
+{
+  "id": "bilan-app-3",
+  "title": "Application 3",
+  "intro": "Dans le bilan d'une entreprise industrielle figurent un capital de 1 600 000 €, clients 700 000 €, fournisseurs 1 360 000 €, fonds en banque 300 000 €, espèces en caisse 50 000 €, matériels 1 400 000 €, matières 1 500 000 €, produits fabriqués 800 000 €. L'entreprise est propriétaire de brevets d'invention pour 300 000 € et elle doit, payable dans 5 ans, 700 000 € à un établissement financier. Établissez le bilan au 31/12/N, trouvez le résultat et équilibrez le bilan.",
+  "questions": [
+    {
+      "type": "classement",
+      "statement": "Classez chaque élément dans la bonne partie du bilan.",
+      "categories": ["Actif immobilisé", "Actif circulant", "Capitaux propres", "Dettes"],
+      "items": [
+        { "label": "Capital : 1 600 000 €", "answer": 2 },
+        { "label": "Clients : 700 000 €", "answer": 1 },
+        { "label": "Fournisseurs : 1 360 000 €", "answer": 3 },
+        { "label": "Fonds en banque : 300 000 €", "answer": 1 },
+        { "label": "Espèces en caisse : 50 000 €", "answer": 1 },
+        { "label": "Matériels : 1 400 000 €", "answer": 0 },
+        { "label": "Matières : 1 500 000 €", "answer": 1 },
+        { "label": "Produits fabriqués : 800 000 €", "answer": 1 },
+        { "label": "Brevets d'invention : 300 000 €", "answer": 0 },
+        { "label": "Dette envers un établissement financier (5 ans) : 700 000 €", "answer": 3 }
+      ],
+      "explanation": "Les matières et les produits fabriqués sont des stocks : actif circulant. La dette à 5 ans est un emprunt."
+    },
+    {
+      "type": "table",
+      "statement": "Calculez les totaux du bilan.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Total de l'actif immobilisé", "cells": [ { "input": true, "answer": 1700000, "tolerance": 0.5, "unit": "€", "label": "Total de l'actif immobilisé", "explanation": "300 000 + 1 400 000" } ] },
+        { "label": "Total de l'actif circulant", "cells": [ { "input": true, "answer": 3350000, "tolerance": 0.5, "unit": "€", "label": "Total de l'actif circulant", "explanation": "700 000 + 300 000 + 50 000 + 1 500 000 + 800 000" } ] },
+        { "label": "Total des dettes", "cells": [ { "input": true, "answer": 2060000, "tolerance": 0.5, "unit": "€", "label": "Total des dettes", "explanation": "1 360 000 + 700 000" } ] },
+        { "label": "TOTAL GÉNÉRAL (actif)", "cells": [ { "input": true, "answer": 5050000, "tolerance": 0.5, "unit": "€", "label": "Total général", "explanation": "1 700 000 + 3 350 000" } ] }
+      ]
+    },
+    {
+      "type": "mcq",
+      "statement": "L'entreprise a-t-elle réalisé un bénéfice ou une perte ?",
+      "choices": ["Un bénéfice", "Une perte"],
+      "correctIndex": 0,
+      "explanation": "Capital + dettes = 3 660 000 €, inférieur à l'actif (5 050 000 €) : le résultat est positif."
+    },
+    {
+      "type": "table",
+      "statement": "Équilibrez le bilan.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Résultat (bénéfice)", "cells": [ { "input": true, "answer": 1390000, "tolerance": 0.5, "unit": "€", "label": "Bénéfice", "explanation": "5 050 000 − 1 600 000 − 2 060 000" } ] },
+        { "label": "Total des capitaux propres", "cells": [ { "input": true, "answer": 2990000, "tolerance": 0.5, "unit": "€", "label": "Total des capitaux propres", "explanation": "1 600 000 + 1 390 000" } ] }
+      ]
+    }
+  ]
+}

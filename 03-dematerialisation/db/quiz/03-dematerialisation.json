@@ -1,0 +1,60 @@
+{
+  "id": "quiz-03",
+  "title": "Quizz La Dématérialisation",
+  "intro": "5 questions pour vérifier ce que vous avez retenu. Choisissez une réponse par question, puis cliquez sur « Vérifier mes réponses ».",
+  "questions": [
+    {
+      "type": "mcq",
+      "statement": "Quels sont les principaux avantages de la comptabilité informatisée ?",
+      "choices": [
+        "Augmentation des erreurs de calcul, intervention humaine accrue",
+        "Automatisation des tâches répétitives, réduction des erreurs, traitement plus rapide",
+        "Nécessité de plus de personnel, traitement manuel des données"
+      ],
+      "correctIndex": 1,
+      "explanation": "À revoir : « Résultat de la comptabilité informatisée » dans la partie Aujourd'hui."
+    },
+    {
+      "type": "mcq",
+      "statement": "Quel est l'un des principaux avantages de la dématérialisation ?",
+      "choices": [
+        "Augmentation des coûts de stockage",
+        "Accès facilité aux documents",
+        "Obligation de conserver des documents papier"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "mcq",
+      "statement": "Quel est l'impact de la dématérialisation sur l'environnement ?",
+      "choices": [
+        "Elle n'a aucun impact",
+        "Elle favorise une réduction de l'utilisation de papier",
+        "Elle augmente la consommation d'énergie"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "mcq",
+      "statement": "Quel est le rôle de l'OCR en comptabilité ?",
+      "choices": [
+        "Analyser les données financières pour les investisseurs",
+        "Générer des rapports de performance mensuels",
+        "Lire et extraire des données d'un fichier pour automatiser la comptabilité"
+      ],
+      "correctIndex": 2,
+      "explanation": "À revoir : « Focus sur l'OCR » dans la partie Aujourd'hui."
+    },
+    {
+      "type": "mcq",
+      "statement": "Quelle tendance future est mentionnée pour la comptabilité ?",
+      "choices": [
+        "Retour à la comptabilité manuscrite",
+        "Augmentation des tâches répétitives",
+        "Fin de la saisie comptable manuelle grâce à l'intelligence artificielle"
+      ],
+      "correctIndex": 2,
+      "explanation": "À revoir : la partie « La comptabilité de demain ? »."
+    }
+  ]
+}

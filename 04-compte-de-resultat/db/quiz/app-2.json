@@ -1,0 +1,48 @@
+{
+  "id": "cr-app-2",
+  "title": "Application 2",
+  "intro": "Calculez le résultat de l'entreprise au 31/12/N avec des ventes pour 880 000 €, achats utilisés pour 700 000 €, achats services divers 43 000 €, salaires 53 000 €, charges sociales 22 000 €, impôts 30 000 €, intérêts payés 21 000 €. Équilibrez le compte de résultat à travers le bénéfice ou la perte.",
+  "questions": [
+    {
+      "type": "classement",
+      "statement": "Classez chaque élément dans la bonne rubrique du compte de résultat.",
+      "categories": ["Charge d'exploitation", "Charge financière", "Charge exceptionnelle", "Produit d'exploitation", "Produit financier", "Produit exceptionnel"],
+      "items": [
+        { "label": "Ventes : 880 000 €", "answer": 3 },
+        { "label": "Achats utilisés : 700 000 €", "answer": 0 },
+        { "label": "Achats services divers : 43 000 €", "answer": 0 },
+        { "label": "Salaires : 53 000 €", "answer": 0 },
+        { "label": "Charges sociales : 22 000 €", "answer": 0 },
+        { "label": "Impôts : 30 000 €", "answer": 0 },
+        { "label": "Intérêts payés : 21 000 €", "answer": 1 }
+      ]
+    },
+    {
+      "type": "table",
+      "statement": "Calculez les totaux du compte de résultat.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Total des charges d'exploitation", "cells": [ { "input": true, "answer": 848000, "tolerance": 0.5, "unit": "€", "label": "Total des charges d'exploitation", "explanation": "700 000 + 43 000 + 53 000 + 22 000 + 30 000" } ] },
+        { "label": "Total des charges financières", "cells": [ { "input": true, "answer": 21000, "tolerance": 0.5, "unit": "€", "label": "Total des charges financières" } ] },
+        { "label": "TOTAL DES CHARGES", "cells": [ { "input": true, "answer": 869000, "tolerance": 0.5, "unit": "€", "label": "Total des charges", "explanation": "848 000 + 21 000" } ] },
+        { "label": "TOTAL DES PRODUITS", "cells": [ { "input": true, "answer": 880000, "tolerance": 0.5, "unit": "€", "label": "Total des produits" } ] }
+      ]
+    },
+    {
+      "type": "mcq",
+      "statement": "L'entreprise a-t-elle réalisé un bénéfice ou une perte ?",
+      "choices": ["Un bénéfice", "Une perte"],
+      "correctIndex": 0,
+      "explanation": "Le total des produits (880 000 €) est supérieur au total des charges (869 000 €)."
+    },
+    {
+      "type": "table",
+      "statement": "Équilibrez le compte de résultat.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Résultat (bénéfice)", "cells": [ { "input": true, "answer": 11000, "tolerance": 0.5, "unit": "€", "label": "Bénéfice", "explanation": "880 000 − 869 000, inscrit du côté des charges" } ] },
+        { "label": "TOTAL GÉNÉRAL", "cells": [ { "input": true, "answer": 880000, "tolerance": 0.5, "unit": "€", "label": "Total général", "explanation": "869 000 + 11 000 = 880 000, égal au total des produits" } ] }
+      ]
+    }
+  ]
+}

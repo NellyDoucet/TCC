@@ -1,0 +1,61 @@
+{
+  "id": "bilan-app-5",
+  "title": "Application 5 — Compte de résultat et bilan",
+  "intro": "Vous disposez des informations suivantes. Dressez le bilan et le compte de résultat.",
+  "questions": [
+    {
+      "type": "classement",
+      "statement": "Classez chaque élément.",
+      "categories": ["Charge d'exploitation", "Charge financière", "Charge exceptionnelle", "Produit d'exploitation", "Produit financier", "Produit exceptionnel", "Actif immobilisé", "Actif circulant", "Capitaux propres", "Dettes"],
+      "items": [
+        { "label": "Achats de marchandises : 420 600", "answer": 0 },
+        { "label": "Achats non stockés : 5 790", "answer": 0 },
+        { "label": "Banque : 2 500", "answer": 7 },
+        { "label": "Capital : 100 000", "answer": 8 },
+        { "label": "Charges exceptionnelles : 170", "answer": 2 },
+        { "label": "Charges financières : 480", "answer": 1 },
+        { "label": "Charges sociales : 1 700", "answer": 0 },
+        { "label": "Clients : 2 340", "answer": 7 },
+        { "label": "Dettes fiscales et sociales : 2 390", "answer": 9 },
+        { "label": "Emprunts : 40 000", "answer": 9 },
+        { "label": "Fonds commercial : 85 000", "answer": 6 },
+        { "label": "Fournisseurs : 22 800", "answer": 9 },
+        { "label": "Fournisseurs d'immobilisations : 1 500", "answer": 9 },
+        { "label": "Impôts, taxes, versements assimilés : 2 000", "answer": 0 },
+        { "label": "Matériel de transport : 32 500", "answer": 6 },
+        { "label": "Matériel industriel : 35 000", "answer": 6 },
+        { "label": "Matériel informatique : 12 000", "answer": 6 },
+        { "label": "Produits exceptionnels : 950", "answer": 5 },
+        { "label": "Produits financiers : 700", "answer": 4 },
+        { "label": "Réserves : 2 000", "answer": 8 },
+        { "label": "Salaires et traitements : 3 590", "answer": 0 },
+        { "label": "Services extérieurs : 1 450", "answer": 0 },
+        { "label": "Stock de marchandises : 4 600", "answer": 7 },
+        { "label": "Variation des stocks : 700", "answer": 0 },
+        { "label": "Ventes de marchandises : 440 080", "answer": 3 }
+      ]
+    },
+    {
+      "type": "table",
+      "statement": "Le compte de résultat.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "TOTAL DES CHARGES", "cells": [ { "input": true, "answer": 436480, "tolerance": 0.5, "label": "Total des charges", "explanation": "420 600 + 700 + 5 790 + 1 450 + 2 000 + 3 590 + 1 700 + 480 + 170" } ] },
+        { "label": "TOTAL DES PRODUITS", "cells": [ { "input": true, "answer": 441730, "tolerance": 0.5, "label": "Total des produits", "explanation": "440 080 + 700 + 950" } ] },
+        { "label": "Résultat (bénéfice)", "cells": [ { "input": true, "answer": 5250, "tolerance": 0.5, "label": "Bénéfice", "explanation": "441 730 − 436 480" } ] }
+      ]
+    },
+    {
+      "type": "table",
+      "statement": "Le bilan.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Total I : actif immobilisé", "cells": [ { "input": true, "answer": 164500, "tolerance": 0.5, "label": "Actif immobilisé", "explanation": "85 000 + 35 000 + 32 500 + 12 000" } ] },
+        { "label": "Total II : actif circulant", "cells": [ { "input": true, "answer": 9440, "tolerance": 0.5, "label": "Actif circulant", "explanation": "4 600 + 2 340 + 2 500" } ] },
+        { "label": "Total I : capitaux propres", "cells": [ { "input": true, "answer": 107250, "tolerance": 0.5, "label": "Capitaux propres", "explanation": "100 000 + 2 000 + 5 250" } ] },
+        { "label": "Total II : dettes", "cells": [ { "input": true, "answer": 66690, "tolerance": 0.5, "label": "Dettes", "explanation": "40 000 + 22 800 + 2 390 + 1 500" } ] },
+        { "label": "TOTAL GÉNÉRAL", "cells": [ { "input": true, "answer": 173940, "tolerance": 0.5, "label": "Total général", "explanation": "164 500 + 9 440 = 107 250 + 66 690" } ] }
+      ]
+    }
+  ]
+}

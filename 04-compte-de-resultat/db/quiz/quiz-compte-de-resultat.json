@@ -1,0 +1,53 @@
+{
+  "id": "quiz-compte-de-resultat",
+  "title": "Quizz le Compte de Résultat",
+  "intro": "4 questions pour vérifier ce que vous avez retenu. Choisissez une réponse par question, puis cliquez sur « Vérifier mes réponses ».",
+  "questions": [
+    {
+      "type": "mcq",
+      "statement": "Le compte de résultat est un document qui :",
+      "choices": [
+        "Détermine le bénéfice ou la perte de l'année",
+        "Retrace l'ensemble des charges et des actifs au cours de l'année comptable"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le compte de résultat compare les produits et les charges de l'exercice, pas les actifs : c'est le bilan qui présente l'actif."
+    },
+    {
+      "type": "mcq",
+      "statement": "Que mesure le compte de résultat d'une entreprise ?",
+      "choices": [
+        "Les variations de trésorerie",
+        "La performance économique sur une période donnée",
+        "Les dettes financières",
+        "Le patrimoine de l'entreprise"
+      ],
+      "correctIndex": 1,
+      "explanation": "Le compte de résultat mesure la performance de l'entreprise (bénéfice ou perte) sur une période, en comparant produits et charges."
+    },
+    {
+      "type": "mcq",
+      "statement": "Comment est calculé le résultat net d'une entreprise ?",
+      "choices": [
+        "Immobilisations - Amortissements",
+        "Capitaux propres - Dettes",
+        "Actif - Passif",
+        "Produits - Charges"
+      ],
+      "correctIndex": 3,
+      "explanation": "Le résultat de l'exercice se calcule en soustrayant le total des charges au total des produits."
+    },
+    {
+      "type": "mcq",
+      "statement": "Quelles sont les deux grandes catégories du compte de résultat ?",
+      "choices": [
+        "Produits et Charges",
+        "Actif et Charges",
+        "Charges et Passif",
+        "Produits et Actif"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le compte de résultat regroupe les produits (ce qui enrichit) et les charges (ce qui appauvrit) de l'exercice."
+    }
+  ]
+}

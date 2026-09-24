@@ -1,0 +1,55 @@
+{
+  "id": "bilan-app-1",
+  "title": "Application 1 — IKOM",
+  "intro": "Vous travaillez dans l'entreprise IKOM, fabricant d'articles ménagers. À partir des informations suivantes, établissez en date du 31/12/N le bilan (simplifié) de cette entreprise.",
+  "questions": [
+    {
+      "type": "classement",
+      "statement": "Classez chaque élément dans la bonne partie du bilan.",
+      "categories": ["Actif immobilisé", "Actif circulant", "Capitaux propres", "Dettes"],
+      "items": [
+        { "label": "Autres créances : 13 100 €", "answer": 1 },
+        { "label": "Argent en banque : 17 400 €", "answer": 1 },
+        { "label": "Argent en caisse : 1 700 €", "answer": 1 },
+        { "label": "Autres dettes : 23 900 €", "answer": 3 },
+        { "label": "Capital : 50 000 €", "answer": 2 },
+        { "label": "Constructions : 132 900 €", "answer": 0 },
+        { "label": "Créances clients : 42 900 €", "answer": 1 },
+        { "label": "Dettes envers les organismes sociaux : 9 100 €", "answer": 3 },
+        { "label": "Dettes envers l'État : 7 600 €", "answer": 3 },
+        { "label": "Dettes fournisseurs : 57 300 €", "answer": 3 },
+        { "label": "Emprunts : 196 800 €", "answer": 3 },
+        { "label": "Fonds commercial : 37 500 €", "answer": 0 },
+        { "label": "Machines : 67 400 €", "answer": 0 },
+        { "label": "Matériels informatiques : 8 500 €", "answer": 0 },
+        { "label": "Prêts : 11 800 €", "answer": 0 },
+        { "label": "Réserves : 64 200 €", "answer": 2 },
+        { "label": "Résultat (perte) : − 7 700 €", "answer": 2 },
+        { "label": "Stocks de matières premières : 9 200 €", "answer": 1 },
+        { "label": "Stocks de produits finis : 18 400 €", "answer": 1 },
+        { "label": "Terrains : 21 300 €", "answer": 0 },
+        { "label": "Véhicules de transport : 19 100 €", "answer": 0 }
+      ],
+      "explanation": "Le fonds commercial est une immobilisation incorporelle, les prêts une immobilisation financière."
+    },
+    {
+      "type": "table",
+      "statement": "Calculez les totaux du bilan.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Total de l'actif immobilisé", "cells": [ { "input": true, "answer": 298500, "tolerance": 0.5, "unit": "€", "label": "Total de l'actif immobilisé", "explanation": "37 500 + 132 900 + 67 400 + 8 500 + 21 300 + 19 100 + 11 800" } ] },
+        { "label": "Total de l'actif circulant", "cells": [ { "input": true, "answer": 102700, "tolerance": 0.5, "unit": "€", "label": "Total de l'actif circulant", "explanation": "13 100 + 17 400 + 1 700 + 42 900 + 9 200 + 18 400" } ] },
+        { "label": "Total des capitaux propres", "cells": [ { "input": true, "answer": 106500, "tolerance": 0.5, "unit": "€", "label": "Total des capitaux propres", "explanation": "50 000 − 7 700 + 64 200 : la perte se retranche" } ] },
+        { "label": "Total des dettes", "cells": [ { "input": true, "answer": 294700, "tolerance": 0.5, "unit": "€", "label": "Total des dettes", "explanation": "23 900 + 7 600 + 57 300 + 196 800 + 9 100" } ] },
+        { "label": "TOTAL GÉNÉRAL", "cells": [ { "input": true, "answer": 401200, "tolerance": 0.5, "unit": "€", "label": "Total général", "explanation": "298 500 + 102 700 = 106 500 + 294 700" } ] }
+      ]
+    },
+    {
+      "type": "mcq",
+      "statement": "Comment apparaît la perte de 7 700 € dans le bilan ?",
+      "choices": ["À l'actif, en positif", "Au passif, dans les capitaux propres, en négatif", "Au passif, dans les dettes", "Elle n'apparaît pas au bilan"],
+      "correctIndex": 1,
+      "explanation": "Le résultat apparaît toujours au passif dans les capitaux propres : en positif s'il s'agit d'un bénéfice, en négatif s'il s'agit d'une perte."
+    }
+  ]
+}

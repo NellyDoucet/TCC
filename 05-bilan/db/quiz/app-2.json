@@ -1,0 +1,48 @@
+{
+  "id": "bilan-app-2",
+  "title": "Application 2",
+  "intro": "Une entreprise détient un capital de 50 000 €, elle possède un mobilier de bureau de 10 000 €, les marchandises en magasin valent 135 000 €, la caisse 23 000 €, des créances clients 20 000 €, un emprunt à long terme de 30 000 €, des dettes fournisseurs de 120 000 €. Établissez le bilan au 31/12/N en calculant son résultat et sa situation nette, puis équilibrez le bilan.",
+  "questions": [
+    {
+      "type": "classement",
+      "statement": "Classez chaque élément dans la bonne partie du bilan.",
+      "categories": ["Actif immobilisé", "Actif circulant", "Capitaux propres", "Dettes"],
+      "items": [
+        { "label": "Capital : 50 000 €", "answer": 2 },
+        { "label": "Mobilier de bureau : 10 000 €", "answer": 0 },
+        { "label": "Marchandises en magasin : 135 000 €", "answer": 1 },
+        { "label": "Caisse : 23 000 €", "answer": 1 },
+        { "label": "Créances clients : 20 000 €", "answer": 1 },
+        { "label": "Emprunt à long terme : 30 000 €", "answer": 3 },
+        { "label": "Dettes fournisseurs : 120 000 €", "answer": 3 }
+      ]
+    },
+    {
+      "type": "table",
+      "statement": "Calculez les totaux connus.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Total de l'actif", "cells": [ { "input": true, "answer": 188000, "tolerance": 0.5, "unit": "€", "label": "Total de l'actif", "explanation": "10 000 + 135 000 + 23 000 + 20 000" } ] },
+        { "label": "Total des dettes", "cells": [ { "input": true, "answer": 150000, "tolerance": 0.5, "unit": "€", "label": "Total des dettes", "explanation": "30 000 + 120 000" } ] },
+        { "label": "Capital + dettes", "cells": [ { "input": true, "answer": 200000, "tolerance": 0.5, "unit": "€", "label": "Capital + dettes", "explanation": "50 000 + 150 000" } ] }
+      ]
+    },
+    {
+      "type": "mcq",
+      "statement": "L'entreprise a-t-elle réalisé un bénéfice ou une perte ?",
+      "choices": ["Un bénéfice", "Une perte"],
+      "correctIndex": 1,
+      "explanation": "Le passif sans le résultat (200 000 €) dépasse l'actif (188 000 €) : pour équilibrer, le résultat doit être négatif."
+    },
+    {
+      "type": "table",
+      "statement": "Équilibrez le bilan.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Résultat (montant de la perte, sans signe)", "cells": [ { "input": true, "answer": 12000, "tolerance": 0.5, "unit": "€", "label": "Perte", "explanation": "188 000 − 200 000 = − 12 000" } ] },
+        { "label": "Situation nette (total des capitaux propres)", "cells": [ { "input": true, "answer": 38000, "tolerance": 0.5, "unit": "€", "label": "Situation nette", "explanation": "50 000 − 12 000" } ] },
+        { "label": "TOTAL GÉNÉRAL", "cells": [ { "input": true, "answer": 188000, "tolerance": 0.5, "unit": "€", "label": "Total général", "explanation": "38 000 + 150 000 = 188 000, égal au total de l'actif" } ] }
+      ]
+    }
+  ]
+}

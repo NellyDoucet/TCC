@@ -1,0 +1,56 @@
+{
+  "id": "cr-app-1",
+  "title": "Application 1",
+  "intro": "Vous travaillez dans l'entreprise IKOM, revendeur de meubles. À partir des informations suivantes, établissez en date du 31/12/N le compte de résultat (simplifié) de cette entreprise.",
+  "questions": [
+    {
+      "type": "classement",
+      "statement": "Classez chaque élément dans la bonne rubrique du compte de résultat.",
+      "categories": ["Charge d'exploitation", "Charge financière", "Charge exceptionnelle", "Produit d'exploitation", "Produit financier", "Produit exceptionnel"],
+      "items": [
+        { "label": "Achats de marchandises : 91 600,00 €", "answer": 0 },
+        { "label": "Ventes de marchandises : 172 800,00 €", "answer": 3 },
+        { "label": "Achats de services : 39 800,00 €", "answer": 0 },
+        { "label": "Frais de port facturés : 4 700,00 €", "answer": 3 },
+        { "label": "Frais de personnel : 42 300,00 €", "answer": 0 },
+        { "label": "Charges exceptionnelles : 6 400,00 €", "answer": 2 },
+        { "label": "Impôts, taxes et versements assimilés : 15 700,00 €", "answer": 0 },
+        { "label": "Revenus des actions : 7 100,00 €", "answer": 4 },
+        { "label": "Produits exceptionnels : 9 100,00 €", "answer": 5 },
+        { "label": "Achats de matières et fournitures : 25 700,00 €", "answer": 0 },
+        { "label": "Intérêts payés : 2 900,00 €", "answer": 1 }
+      ]
+    },
+    {
+      "type": "table",
+      "statement": "Calculez les totaux du compte de résultat.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "Total des charges d'exploitation", "cells": [ { "input": true, "answer": 215100, "tolerance": 0.5, "unit": "€", "label": "Total des charges d'exploitation", "explanation": "91 600 + 25 700 + 39 800 + 15 700 + 42 300" } ] },
+        { "label": "Total des produits d'exploitation", "cells": [ { "input": true, "answer": 177500, "tolerance": 0.5, "unit": "€", "label": "Total des produits d'exploitation", "explanation": "172 800 + 4 700" } ] },
+        { "label": "Total des charges financières", "cells": [ { "input": true, "answer": 2900, "tolerance": 0.5, "unit": "€", "label": "Total des charges financières" } ] },
+        { "label": "Total des produits financiers", "cells": [ { "input": true, "answer": 7100, "tolerance": 0.5, "unit": "€", "label": "Total des produits financiers" } ] },
+        { "label": "Total des charges exceptionnelles", "cells": [ { "input": true, "answer": 6400, "tolerance": 0.5, "unit": "€", "label": "Total des charges exceptionnelles" } ] },
+        { "label": "Total des produits exceptionnels", "cells": [ { "input": true, "answer": 9100, "tolerance": 0.5, "unit": "€", "label": "Total des produits exceptionnels" } ] },
+        { "label": "TOTAL DES CHARGES", "cells": [ { "input": true, "answer": 224400, "tolerance": 0.5, "unit": "€", "label": "Total des charges", "explanation": "215 100 + 2 900 + 6 400" } ] },
+        { "label": "TOTAL DES PRODUITS", "cells": [ { "input": true, "answer": 193700, "tolerance": 0.5, "unit": "€", "label": "Total des produits", "explanation": "177 500 + 7 100 + 9 100" } ] }
+      ]
+    },
+    {
+      "type": "mcq",
+      "statement": "L'entreprise IKOM a-t-elle réalisé un bénéfice ou une perte ?",
+      "choices": ["Un bénéfice", "Une perte"],
+      "correctIndex": 1,
+      "explanation": "Le total des produits (193 700 €) est inférieur au total des charges (224 400 €) : le résultat est négatif."
+    },
+    {
+      "type": "numeric",
+      "statement": "Quel est le montant du résultat (sans signe) ?",
+      "answer": 30700,
+      "answerDisplay": "30 700,00",
+      "tolerance": 0.5,
+      "unit": "€",
+      "explanation": "Résultat = total des produits − total des charges = 193 700 − 224 400 = − 30 700 €. La perte s'inscrit du côté des produits pour équilibrer : total général 224 400 € de chaque côté."
+    }
+  ]
+}

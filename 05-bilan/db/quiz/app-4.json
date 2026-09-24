@@ -1,0 +1,58 @@
+{
+  "id": "bilan-app-4",
+  "title": "Application 4 — Compte de résultat et bilan",
+  "intro": "Monsieur Jean-Pierre François a créé son entreprise individuelle le 2 avril N-2. Il vous fournit la balance par soldes après inventaire au 31 décembre N (montants en k€). Dressez le bilan et le compte de résultat au 31 décembre N.",
+  "questions": [
+    {
+      "type": "classement",
+      "statement": "Pour chaque solde, indiquez où il se place.",
+      "categories": ["Compte de résultat : charge", "Compte de résultat : produit", "Bilan : actif", "Bilan : actif, amortissement (en déduction)", "Bilan : passif"],
+      "items": [
+        { "label": "Achats de marchandises : 33 950", "answer": 0 },
+        { "label": "Amortissements du matériel de transport : 890", "answer": 3 },
+        { "label": "Amortissements du mobilier : 90", "answer": 3 },
+        { "label": "Autres achats et services extérieurs : 2 340", "answer": 0 },
+        { "label": "Banque : 320", "answer": 2 },
+        { "label": "Capital : 75 000", "answer": 4 },
+        { "label": "Charges d'intérêt : 16", "answer": 0 },
+        { "label": "Clients : 3 450", "answer": 2 },
+        { "label": "Dotations aux amortissements : 110", "answer": 0 },
+        { "label": "Emprunts : 4 000", "answer": 4 },
+        { "label": "Fonds commercial : 60 000", "answer": 2 },
+        { "label": "Fournisseurs : 1 230", "answer": 4 },
+        { "label": "Matériel de transport : 12 600", "answer": 2 },
+        { "label": "Mobilier : 4 152", "answer": 2 },
+        { "label": "Réserves : 1 020", "answer": 4 },
+        { "label": "Stocks de marchandises : 2 360", "answer": 2 },
+        { "label": "Variation des stocks : 120", "answer": 0 },
+        { "label": "Ventes de marchandises : 37 188", "answer": 1 }
+      ],
+      "explanation": "Les dotations aux amortissements (110) sont une charge ; les amortissements cumulés (890 et 90) se retranchent de la valeur brute des immobilisations à l'actif."
+    },
+    {
+      "type": "table",
+      "statement": "Le compte de résultat (en k€).",
+      "columns": ["", "Montant (k€)"],
+      "rows": [
+        { "label": "Total des charges d'exploitation", "cells": [ { "input": true, "answer": 36520, "tolerance": 0.5, "label": "Total des charges d'exploitation", "explanation": "33 950 + 2 340 + 120 + 110" } ] },
+        { "label": "TOTAL DES CHARGES", "cells": [ { "input": true, "answer": 36536, "tolerance": 0.5, "label": "Total des charges", "explanation": "36 520 + 16 de charges d'intérêt" } ] },
+        { "label": "TOTAL DES PRODUITS", "cells": [ { "input": true, "answer": 37188, "tolerance": 0.5, "label": "Total des produits" } ] },
+        { "label": "Résultat (bénéfice)", "cells": [ { "input": true, "answer": 652, "tolerance": 0.5, "label": "Bénéfice", "explanation": "37 188 − 36 536" } ] }
+      ]
+    },
+    {
+      "type": "table",
+      "statement": "Le bilan (en k€) : calculez les valeurs nettes et les totaux.",
+      "columns": ["", "Montant (k€)"],
+      "rows": [
+        { "label": "Matériel de transport : valeur nette", "cells": [ { "input": true, "answer": 11710, "tolerance": 0.5, "label": "Matériel de transport net", "explanation": "12 600 − 890" } ] },
+        { "label": "Mobilier : valeur nette", "cells": [ { "input": true, "answer": 4062, "tolerance": 0.5, "label": "Mobilier net", "explanation": "4 152 − 90" } ] },
+        { "label": "Total de l'actif immobilisé (net)", "cells": [ { "input": true, "answer": 75772, "tolerance": 0.5, "label": "Total de l'actif immobilisé net", "explanation": "60 000 + 11 710 + 4 062" } ] },
+        { "label": "Total de l'actif circulant", "cells": [ { "input": true, "answer": 6130, "tolerance": 0.5, "label": "Total de l'actif circulant", "explanation": "320 + 3 450 + 2 360" } ] },
+        { "label": "Total des capitaux propres", "cells": [ { "input": true, "answer": 76672, "tolerance": 0.5, "label": "Total des capitaux propres", "explanation": "75 000 + 1 020 + 652 de bénéfice" } ] },
+        { "label": "Total des dettes", "cells": [ { "input": true, "answer": 5230, "tolerance": 0.5, "label": "Total des dettes", "explanation": "4 000 + 1 230" } ] },
+        { "label": "TOTAL GÉNÉRAL", "cells": [ { "input": true, "answer": 81902, "tolerance": 0.5, "label": "Total général", "explanation": "75 772 + 6 130 = 76 672 + 5 230" } ] }
+      ]
+    }
+  ]
+}

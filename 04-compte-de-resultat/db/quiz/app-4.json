@@ -1,0 +1,25 @@
+{
+  "id": "cr-app-4",
+  "title": "Application 4",
+  "intro": "Une entreprise a obtenu en N un bénéfice de 180 000 €. Ses achats de biens et services marchands avaient été de 790 000 €, les autres charges de 327 000 €. Ses produits sont constitués de ventes et d'un loyer reçu de 20 000 €. Déterminez le montant des ventes et équilibrez le compte de résultat au 31/12/N.",
+  "questions": [
+    {
+      "type": "table",
+      "statement": "Complétez le compte de résultat, étape par étape.",
+      "columns": ["", "Montant"],
+      "rows": [
+        { "label": "1. Total des charges", "cells": [ { "input": true, "answer": 1117000, "tolerance": 0.5, "unit": "€", "label": "Total des charges", "explanation": "790 000 + 327 000" } ] },
+        { "label": "2. Total général (charges + bénéfice)", "cells": [ { "input": true, "answer": 1297000, "tolerance": 0.5, "unit": "€", "label": "Total général", "explanation": "1 117 000 + 180 000" } ] },
+        { "label": "3. Total des produits", "cells": [ { "input": true, "answer": 1297000, "tolerance": 0.5, "unit": "€", "label": "Total des produits", "explanation": "en cas de bénéfice, le total des produits est égal au total général" } ] },
+        { "label": "4. Ventes", "cells": [ { "input": true, "answer": 1277000, "tolerance": 0.5, "unit": "€", "label": "Ventes", "explanation": "1 297 000 − 20 000 de loyer reçu" } ] }
+      ]
+    },
+    {
+      "type": "mcq",
+      "statement": "Dans quelle rubrique place-t-on le loyer reçu de 20 000 € ?",
+      "choices": ["Charges d'exploitation", "Produits d'exploitation", "Produits financiers", "Produits exceptionnels"],
+      "correctIndex": 1,
+      "explanation": "Dans la correction, le loyer reçu figure avec les ventes dans les produits d'exploitation."
+    }
+  ]
+}
