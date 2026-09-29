@@ -257,8 +257,22 @@
     return 'adrar-tcc-unlock-04-compte-de-resultat-' + chapId;
   }
 
+  /* Deverrouillage automatique : si le chapitre precedent (deverrouillePar)
+     a ete corrige avec un score au moins egal au seuil, l'etape suivante
+     s'ouvre sans code. Le code reste toujours une option de secours. */
+  function scoreUnlocks(chap) {
+    if (!chap.deverrouillePar) {
+      return false;
+    }
+    var prevProg = state.progression[chap.deverrouillePar.chapitre];
+    return !!(prevProg && prevProg.checked && (prevProg.scorePercent || 0) >= chap.deverrouillePar.seuil);
+  }
+
   function isChapterUnlocked(chap) {
     if (!chap.codeRequis) {
+      return true;
+    }
+    if (scoreUnlocks(chap)) {
       return true;
     }
     try {
@@ -271,6 +285,18 @@
   function renderInlineGate(chap) {
     var wrapper = document.createElement('div');
     wrapper.className = 'app-main-inner';
+    var hint = '';
+    if (chap.deverrouillePar) {
+      var prevProg = state.progression[chap.deverrouillePar.chapitre];
+      if (prevProg && prevProg.checked) {
+        hint = '<p class="access-gate__text">Votre score sur l\'étape précédente (' + (prevProg.scorePercent || 0) +
+          ' %) n\'atteint pas encore le seuil de ' + chap.deverrouillePar.seuil +
+          ' % nécessaire pour un accès automatique. Réessayez l\'étape précédente, ou saisissez le code.</p>';
+      } else {
+        hint = '<p class="access-gate__text">Cette étape s\'ouvre aussi automatiquement si vous obtenez au moins ' +
+          chap.deverrouillePar.seuil + ' % à l\'étape précédente.</p>';
+      }
+    }
     wrapper.innerHTML =
       '<div class="page">' +
         '<div class="access-gate access-gate--inline">' +
@@ -278,6 +304,7 @@
             iconMarkup('lock', 'access-gate__icon') +
             '<h1 class="access-gate__title">Accès protégé</h1>' +
             '<p class="access-gate__text">Saisissez le code communiqué par votre formateur pour ouvrir « ' + chap.titre + ' ».</p>' +
+            hint +
             '<form class="access-gate__form" id="access-gate-form-inline" autocomplete="off">' +
               '<input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" class="access-gate__input" id="access-gate-input-inline" placeholder="Code" aria-label="Code d\'accès">' +
               '<button type="submit" class="btn btn-primary">Valider</button>' +
