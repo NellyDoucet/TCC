@@ -20,6 +20,10 @@
   <resources>
     <resource identifier="RES-1" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="assets/adrar-formation-logo.jpeg" />
+      <file href="assets/exercices-excel/app-1.xlsx" />
+      <file href="assets/exercices-excel/app-2.xlsx" />
+      <file href="assets/exercices-excel/app-3.xlsx" />
+      <file href="assets/exercices-excel/app-4.xlsx" />
       <file href="assets/gif/accueil-compte-de-resultat.gif" />
       <file href="assets/gif/bilan.gif" />
       <file href="css/base/base.css" />
@@ -28,6 +32,7 @@
       <file href="css/components/buttons.css" />
       <file href="css/components/cahier.css" />
       <file href="css/components/cards.css" />
+      <file href="css/components/excel-exercise.css" />
       <file href="css/components/exercise.css" />
       <file href="css/components/module.css" />
       <file href="css/components/nav.css" />
@@ -43,6 +48,10 @@
       <file href="css/tokens/typography.css" />
       <file href="css/typography/typography.css" />
       <file href="db/chapitres.json" />
+      <file href="db/exercices-excel/app-1.json" />
+      <file href="db/exercices-excel/app-2.json" />
+      <file href="db/exercices-excel/app-3.json" />
+      <file href="db/exercices-excel/app-4.json" />
       <file href="db/quiz/app-1.json" />
       <file href="db/quiz/app-2.json" />
       <file href="db/quiz/app-3.json" />
@@ -50,17 +59,22 @@
       <file href="db/quiz/quiz-compte-de-resultat.json" />
       <file href="index.html" />
       <file href="js/app.js" />
+      <file href="js/excel-exercise.js" />
       <file href="js/exercises.js" />
       <file href="js/icons.js" />
       <file href="js/scorm/scorm-api.js" />
       <file href="js/vendor/lucide.js" />
+      <file href="js/vendor/xlsx.full.min.js" />
       <file href="pages/00-accueil.html" />
       <file href="pages/01-intro.html" />
       <file href="pages/02-resultat.html" />
       <file href="pages/03-schema.html" />
-      <file href="pages/04-application.html" />
       <file href="pages/05-conclusion.html" />
       <file href="pages/06-quiz.html" />
+      <file href="pages/application-1.html" />
+      <file href="pages/application-2.html" />
+      <file href="pages/application-3.html" />
+      <file href="pages/application-4.html" />
       <file href="pages/charges.html" />
       <file href="pages/produits.html" />
     </resource>

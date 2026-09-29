@@ -1,0 +1,18 @@
+{
+  "id": "cr-app-1",
+  "title": "Application 1 - Compte de resultat (entreprise IKOM)",
+  "intro": "Telechargez le fichier, completez les cellules jaunes du compte de resultat, enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
+  "sheet": "Compte de resultat",
+  "type": "cells",
+  "cells": [
+    { "ref": "B5", "answer": 215100, "explanation": "91 600 + 25 700 + 39 800 + 15 700 + 42 300 (achats, services, personnel, impots)." },
+    { "ref": "B6", "answer": 177500, "explanation": "172 800 (ventes) + 4 700 (frais de port factures)." },
+    { "ref": "B7", "answer": 2900, "explanation": "Interets payes." },
+    { "ref": "B8", "answer": 7100, "explanation": "Revenus des actions." },
+    { "ref": "B9", "answer": 6400, "explanation": "Charges exceptionnelles." },
+    { "ref": "B10", "answer": 9100, "explanation": "Produits exceptionnels." },
+    { "ref": "B11", "answer": 224400, "explanation": "215 100 + 2 900 + 6 400 (total des trois categories de charges)." },
+    { "ref": "B12", "answer": 193700, "explanation": "177 500 + 7 100 + 9 100 (total des trois categories de produits)." },
+    { "ref": "B13", "answer": 30700, "explanation": "224 400 - 193 700 = 30 700 EUR de perte (les charges depassent les produits)." }
+  ]
+}

@@ -337,6 +337,9 @@
       if (window.Icons) {
         window.Icons.refresh();
       }
+      if (window.ExcelExercise) {
+        window.ExcelExercise.init();
+      }
       els.content.scrollTop = 0;
       return initExerciseIfPresent(chap);
     }).catch(function (err) {
@@ -404,6 +407,22 @@
       }
     });
   }
+
+  window.AppProgress = {
+    markChecked: function (chapId, correct, total) {
+      if (!state.progression[chapId]) {
+        state.progression[chapId] = {};
+      }
+      state.progression[chapId].visited = true;
+      state.progression[chapId].checked = true;
+      state.progression[chapId].scorePercent = total ? Math.round((correct / total) * 100) : 0;
+      state.progression[chapId].correct = correct;
+      state.progression[chapId].total = total;
+      renderSidebar();
+      updateProgressUI();
+      persistProgress();
+    }
+  };
 
   document.addEventListener('DOMContentLoaded', init);
 })(window, document);
