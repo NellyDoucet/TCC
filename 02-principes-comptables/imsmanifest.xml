@@ -26,6 +26,7 @@
       <file href="assets/images/attention-triangle.png" />
       <file href="css/base/base.css" />
       <file href="css/base/reset.css" />
+      <file href="css/components/access-gate.css" />
       <file href="css/components/buttons.css" />
       <file href="css/components/cahier.css" />
       <file href="css/components/cards.css" />
@@ -49,9 +50,15 @@
       <file href="js/scorm/scorm-api.js" />
       <file href="js/vendor/lucide.js" />
       <file href="pages/00-accueil.html" />
-      <file href="pages/01-principes.html" />
       <file href="pages/02-confidentialite.html" />
       <file href="pages/03-conclusion.html" />
+      <file href="pages/principe-continuite.html" />
+      <file href="pages/principe-cout-historique.html" />
+      <file href="pages/principe-image-fidele.html" />
+      <file href="pages/principe-independance.html" />
+      <file href="pages/principe-permanence.html" />
+      <file href="pages/principe-prudence.html" />
+      <file href="pages/principe-regularite.html" />
     </resource>
   </resources>
 </manifest>

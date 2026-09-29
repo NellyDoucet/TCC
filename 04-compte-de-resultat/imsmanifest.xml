@@ -24,6 +24,7 @@
       <file href="assets/gif/bilan.gif" />
       <file href="css/base/base.css" />
       <file href="css/base/reset.css" />
+      <file href="css/components/access-gate.css" />
       <file href="css/components/buttons.css" />
       <file href="css/components/cahier.css" />
       <file href="css/components/cards.css" />
@@ -46,6 +47,7 @@
       <file href="db/quiz/app-2.json" />
       <file href="db/quiz/app-3.json" />
       <file href="db/quiz/app-4.json" />
+      <file href="db/quiz/quiz-compte-de-resultat.json" />
       <file href="index.html" />
       <file href="js/app.js" />
       <file href="js/exercises.js" />
@@ -53,11 +55,14 @@
       <file href="js/scorm/scorm-api.js" />
       <file href="js/vendor/lucide.js" />
       <file href="pages/00-accueil.html" />
-      <file href="pages/01-produits-charges.html" />
+      <file href="pages/01-intro.html" />
       <file href="pages/02-resultat.html" />
       <file href="pages/03-schema.html" />
       <file href="pages/04-application.html" />
       <file href="pages/05-conclusion.html" />
+      <file href="pages/06-quiz.html" />
+      <file href="pages/charges.html" />
+      <file href="pages/produits.html" />
     </resource>
   </resources>
 </manifest>
