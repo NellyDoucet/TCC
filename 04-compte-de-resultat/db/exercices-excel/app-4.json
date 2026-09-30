@@ -1,13 +1,20 @@
 {
   "id": "cr-app-4",
   "title": "Application 4 - Compte de resultat",
-  "intro": "Telechargez le fichier, completez les cellules jaunes du compte de resultat, enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "Compte de resultat",
+  "intro": "Telechargez le fichier, completez le compte de resultat (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
+  "sheet": "Compte de Résultat",
   "type": "cells",
   "cells": [
-    { "ref": "B5", "answer": 1117000, "explanation": "790 000 (achats de biens et services marchands) + 327 000 (autres charges)." },
-    { "ref": "B6", "answer": 1297000, "explanation": "1 117 000 (charges) + 180 000 (benefice)." },
-    { "ref": "B7", "answer": 1297000, "explanation": "En cas de benefice, le total des produits est egal au total general." },
-    { "ref": "B8", "answer": 1277000, "explanation": "1 297 000 - 20 000 de loyer recu = 1 277 000 EUR de ventes." }
+    { "ref": "B5", "answer": 790000, "explanation": "Achats de biens et services marchands." },
+    { "ref": "D5", "answer": 1277000, "explanation": "Ventes = total des produits - loyer recu (1 297 000 - 20 000)." },
+    { "ref": "B6", "answer": 327000, "explanation": "Autres charges." },
+    { "ref": "D6", "answer": 20000, "explanation": "Loyer recu." },
+    { "ref": "B7", "answer": 1117000, "explanation": "Total des charges d'exploitation = 790 000 + 327 000." },
+    { "ref": "D7", "answer": 1297000, "explanation": "Total des produits d'exploitation." },
+    { "ref": "B14", "answer": 1117000, "explanation": "TOTAL DES CHARGES." },
+    { "ref": "D14", "answer": 1297000, "explanation": "TOTAL DES PRODUITS." },
+    { "ref": "B15", "answer": 180000, "explanation": "Benefice (donne par l'enonce)." },
+    { "ref": "B16", "answer": 1297000, "explanation": "TOTAL GENERAL cote charges (charges + benefice)." },
+    { "ref": "D16", "answer": 1297000, "explanation": "TOTAL GENERAL cote produits." }
   ]
 }

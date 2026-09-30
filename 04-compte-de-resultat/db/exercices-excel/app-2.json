@@ -1,15 +1,24 @@
 {
   "id": "cr-app-2",
   "title": "Application 2 - Compte de resultat",
-  "intro": "Telechargez le fichier, completez les cellules jaunes du compte de resultat, enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "Compte de resultat",
+  "intro": "Telechargez le fichier, completez le compte de resultat (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
+  "sheet": "Compte de Résultat",
   "type": "cells",
   "cells": [
-    { "ref": "B5", "answer": 848000, "explanation": "700 000 + 43 000 + 53 000 + 22 000 + 30 000." },
-    { "ref": "B6", "answer": 21000, "explanation": "Interets payes." },
-    { "ref": "B7", "answer": 869000, "explanation": "848 000 + 21 000." },
-    { "ref": "B8", "answer": 880000, "explanation": "Ventes." },
-    { "ref": "B9", "answer": 11000, "explanation": "880 000 - 869 000 = 11 000 EUR de benefice." },
-    { "ref": "B10", "answer": 880000, "explanation": "869 000 + 11 000 = 880 000, egal au total des produits." }
+    { "ref": "B5", "answer": 700000, "explanation": "Achats utilises." },
+    { "ref": "D5", "answer": 880000, "explanation": "Ventes." },
+    { "ref": "B6", "answer": 43000, "explanation": "Achats - services divers." },
+    { "ref": "B7", "answer": 53000, "explanation": "Salaires." },
+    { "ref": "B8", "answer": 22000, "explanation": "Charges sociales." },
+    { "ref": "B9", "answer": 30000, "explanation": "Impots." },
+    { "ref": "B10", "answer": 848000, "explanation": "Total des charges d'exploitation." },
+    { "ref": "D10", "answer": 880000, "explanation": "Total des produits d'exploitation." },
+    { "ref": "B12", "answer": 21000, "explanation": "Interets payes." },
+    { "ref": "B13", "answer": 21000, "explanation": "Total des charges financieres." },
+    { "ref": "B17", "answer": 869000, "explanation": "TOTAL DES CHARGES = 848 000 + 21 000." },
+    { "ref": "D17", "answer": 880000, "explanation": "TOTAL DES PRODUITS." },
+    { "ref": "B18", "answer": 11000, "explanation": "Benefice = 880 000 - 869 000." },
+    { "ref": "B19", "answer": 880000, "explanation": "TOTAL GENERAL cote charges (charges + benefice)." },
+    { "ref": "D19", "answer": 880000, "explanation": "TOTAL GENERAL cote produits." }
   ]
 }
