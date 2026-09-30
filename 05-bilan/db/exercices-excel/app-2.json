@@ -1,0 +1,23 @@
+{
+  "id": "bilan-app-2",
+  "title": "Application 2 - Le Bilan",
+  "intro": "Telechargez le fichier, completez le bilan (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
+  "sheet": "Bilan simplifié",
+  "type": "cells",
+  "cells": [
+    { "ref": "D5", "answer": 50000, "explanation": "Capital." },
+    { "ref": "D6", "answer": -12000, "explanation": "Perte." },
+    { "ref": "B8", "answer": 10000, "explanation": "Mobilier de bureaux." },
+    { "ref": "B11", "answer": 10000, "explanation": "TOTAL DE L'ACTIF IMMOBILISE." },
+    { "ref": "D11", "answer": 38000, "explanation": "TOTAL DES CAPITAUX PROPRES = 50 000 - 12 000." },
+    { "ref": "B13", "answer": 135000, "explanation": "Stocks de marchandises." },
+    { "ref": "D13", "answer": 120000, "explanation": "Dettes fournisseurs." },
+    { "ref": "B14", "answer": 23000, "explanation": "Caisse." },
+    { "ref": "D14", "answer": 30000, "explanation": "Emprunt." },
+    { "ref": "B15", "answer": 20000, "explanation": "Creances clients." },
+    { "ref": "B16", "answer": 178000, "explanation": "TOTAL DE L'ACTIF CIRCULANT." },
+    { "ref": "D16", "answer": 150000, "explanation": "TOTAL DES DETTES." },
+    { "ref": "B17", "answer": 188000, "explanation": "TOTAL GENERAL cote actif." },
+    { "ref": "D17", "answer": 188000, "explanation": "TOTAL GENERAL cote passif." }
+  ]
+}

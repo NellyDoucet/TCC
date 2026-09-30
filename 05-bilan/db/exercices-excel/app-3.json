@@ -1,0 +1,26 @@
+{
+  "id": "bilan-app-3",
+  "title": "Application 3 - Le Bilan",
+  "intro": "Telechargez le fichier, completez le bilan (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
+  "sheet": "Bilan simplifié",
+  "type": "cells",
+  "cells": [
+    { "ref": "D5", "answer": 1600000, "explanation": "Capital." },
+    { "ref": "B6", "answer": 300000, "explanation": "Brevets d'invention." },
+    { "ref": "D6", "answer": 1390000, "explanation": "Benefice." },
+    { "ref": "B8", "answer": 1400000, "explanation": "Materiels." },
+    { "ref": "B11", "answer": 1700000, "explanation": "TOTAL DE L'ACTIF IMMOBILISE." },
+    { "ref": "D11", "answer": 2990000, "explanation": "TOTAL DES CAPITAUX PROPRES." },
+    { "ref": "B13", "answer": 700000, "explanation": "Creance clients." },
+    { "ref": "D13", "answer": 1360000, "explanation": "Dette fournisseurs." },
+    { "ref": "B14", "answer": 300000, "explanation": "Banque." },
+    { "ref": "D14", "answer": 700000, "explanation": "Emprunt." },
+    { "ref": "B15", "answer": 50000, "explanation": "Caisse." },
+    { "ref": "B16", "answer": 1500000, "explanation": "Stock matieres premieres." },
+    { "ref": "B17", "answer": 800000, "explanation": "Stock produits fabriques." },
+    { "ref": "B18", "answer": 3350000, "explanation": "TOTAL DE L'ACTIF CIRCULANT." },
+    { "ref": "D18", "answer": 2060000, "explanation": "TOTAL DES DETTES." },
+    { "ref": "B19", "answer": 5050000, "explanation": "TOTAL GENERAL cote actif." },
+    { "ref": "D19", "answer": 5050000, "explanation": "TOTAL GENERAL cote passif." }
+  ]
+}

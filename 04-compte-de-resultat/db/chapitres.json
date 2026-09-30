@@ -1,7 +1,7 @@
 {
   "titreModule": "Comptabilité — 04. Le Compte de Résultat",
   "sommaireHref": "../index.html",
-  "moduleSuivant": null,
+  "moduleSuivant": { "titre": "Le Bilan", "href": "../05-bilan/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "intro", "numero": "01", "titre": "Le Compte de Résultat", "fichier": "pages/01-intro.html", "icone": "scale" },

@@ -1,0 +1,18 @@
+{
+  "titreModule": "Comptabilité — 05. Le Bilan",
+  "sommaireHref": "../index.html",
+  "moduleSuivant": null,
+  "chapitres": [
+    { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
+    { "id": "intro", "numero": "01", "titre": "Le Bilan", "fichier": "pages/01-intro.html", "icone": "scale" },
+    { "id": "actif", "numero": "02", "titre": "L'actif", "fichier": "pages/02-actif.html", "icone": "trending-up" },
+    { "id": "passif", "numero": "03", "titre": "Le passif", "fichier": "pages/03-passif.html", "icone": "trending-down" },
+    { "id": "exemple-simplifie", "numero": "04", "titre": "Un bilan simplifié", "fichier": "pages/04-exemple-simplifie.html", "icone": "table" },
+    { "id": "exemple-detaille", "numero": "05", "titre": "Un bilan détaillé", "fichier": "pages/05-exemple-detaille.html", "icone": "table-2" },
+    { "id": "application-1", "numero": "A1", "titre": "Application 1", "fichier": "pages/application-1.html", "icone": "pencil", "aExercice": true },
+    { "id": "application-2", "numero": "A2", "titre": "Application 2", "fichier": "pages/application-2.html", "icone": "pencil", "aExercice": true },
+    { "id": "application-3", "numero": "A3", "titre": "Application 3", "fichier": "pages/application-3.html", "icone": "pencil", "aExercice": true },
+    { "id": "application-4", "numero": "A4", "titre": "Application 4", "fichier": "pages/application-4.html", "icone": "pencil", "aExercice": true },
+    { "id": "tp", "numero": "TP", "titre": "TP - La Baguette Magique", "fichier": "pages/tp.html", "icone": "clipboard-check", "aExercice": true }
+  ]
+}
