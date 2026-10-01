@@ -138,7 +138,7 @@
       }
       var statusIcon = 'check-circle-2';
       var statusExtra = isDone ? '' : ' is-empty';
-      if (chap.codeRequis && !isChapterUnlocked(chap)) {
+      if ((chap.codeRequis || chap.deverrouillePar) && !isChapterUnlocked(chap)) {
         statusIcon = 'lock';
         statusExtra = '';
       }
@@ -269,25 +269,56 @@
   }
 
   function isChapterUnlocked(chap) {
-    if (!chap.codeRequis) {
+    if (!chap.codeRequis && !chap.deverrouillePar) {
       return true;
     }
     if (scoreUnlocks(chap)) {
       return true;
     }
-    try {
-      return window.localStorage.getItem(gateStorageKey(chap.id)) === '1';
-    } catch (e) {
-      return false;
+    if (chap.codeRequis) {
+      try {
+        return window.localStorage.getItem(gateStorageKey(chap.id)) === '1';
+      } catch (e) {
+        return false;
+      }
     }
+    return false;
   }
 
+  /* Deux variantes du portail : avec code (formulaire + option de secours),
+     ou score seul (aucun code possible, uniquement le seuil precedent). */
   function renderInlineGate(chap) {
     var wrapper = document.createElement('div');
     wrapper.className = 'app-main-inner';
+    var prevProg = chap.deverrouillePar ? state.progression[chap.deverrouillePar.chapitre] : null;
+
+    if (!chap.codeRequis) {
+      var scoreText = prevProg && prevProg.checked
+        ? 'Votre score sur l\'étape précédente (' + (prevProg.scorePercent || 0) + ' %) n\'atteint pas encore le seuil de ' +
+          chap.deverrouillePar.seuil + ' % requis. Retournez à l\'étape précédente et réessayez.'
+        : 'Cette étape s\'ouvre automatiquement dès que vous obtenez au moins ' + chap.deverrouillePar.seuil +
+          ' % à l\'étape précédente.';
+      wrapper.innerHTML =
+        '<div class="page">' +
+          '<div class="access-gate access-gate--inline">' +
+            '<div class="access-gate__card">' +
+              iconMarkup('lock', 'access-gate__icon') +
+              '<h1 class="access-gate__title">Étape verrouillée</h1>' +
+              '<p class="access-gate__text">' + scoreText + '</p>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+      els.content.innerHTML = '';
+      els.content.appendChild(wrapper);
+      els.content.scrollTop = 0;
+      if (window.Icons) {
+        window.Icons.refresh();
+      }
+      return;
+    }
+
     var hint = '';
     if (chap.deverrouillePar) {
-      var prevProg = state.progression[chap.deverrouillePar.chapitre];
       if (prevProg && prevProg.checked) {
         hint = '<p class="access-gate__text">Votre score sur l\'étape précédente (' + (prevProg.scorePercent || 0) +
           ' %) n\'atteint pas encore le seuil de ' + chap.deverrouillePar.seuil +

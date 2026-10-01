@@ -32,6 +32,7 @@
       <file href="assets/images/immo-3.png" />
       <file href="css/base/base.css" />
       <file href="css/base/reset.css" />
+      <file href="css/components/access-gate.css" />
       <file href="css/components/buttons.css" />
       <file href="css/components/cahier.css" />
       <file href="css/components/cards.css" />

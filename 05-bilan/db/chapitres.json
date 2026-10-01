@@ -10,9 +10,9 @@
     { "id": "exemple-simplifie", "numero": "04", "titre": "Un bilan simplifié", "fichier": "pages/04-exemple-simplifie.html", "icone": "table" },
     { "id": "exemple-detaille", "numero": "05", "titre": "Un bilan détaillé", "fichier": "pages/05-exemple-detaille.html", "icone": "table-2" },
     { "id": "application-1", "numero": "A1", "titre": "Application 1", "fichier": "pages/application-1.html", "icone": "pencil", "aExercice": true },
-    { "id": "application-2", "numero": "A2", "titre": "Application 2", "fichier": "pages/application-2.html", "icone": "pencil", "aExercice": true },
-    { "id": "application-3", "numero": "A3", "titre": "Application 3", "fichier": "pages/application-3.html", "icone": "pencil", "aExercice": true },
-    { "id": "application-4", "numero": "A4", "titre": "Application 4", "fichier": "pages/application-4.html", "icone": "pencil", "aExercice": true },
-    { "id": "tp", "numero": "TP", "titre": "TP - La Baguette Magique", "fichier": "pages/tp.html", "icone": "clipboard-check", "aExercice": true }
+    { "id": "application-2", "numero": "A2", "titre": "Application 2", "fichier": "pages/application-2.html", "icone": "pencil", "aExercice": true, "deverrouillePar": { "chapitre": "application-1", "seuil": 70 } },
+    { "id": "application-3", "numero": "A3", "titre": "Application 3", "fichier": "pages/application-3.html", "icone": "pencil", "aExercice": true, "deverrouillePar": { "chapitre": "application-2", "seuil": 70 } },
+    { "id": "application-4", "numero": "A4", "titre": "Application 4", "fichier": "pages/application-4.html", "icone": "pencil", "aExercice": true, "deverrouillePar": { "chapitre": "application-3", "seuil": 70 } },
+    { "id": "tp", "numero": "TP", "titre": "TP - La Baguette Magique", "fichier": "pages/tp.html", "icone": "clipboard-check", "aExercice": true, "deverrouillePar": { "chapitre": "application-4", "seuil": 70 } }
   ]
 }
