@@ -1,0 +1,50 @@
+/* Habillage "cahier" du cadre de l'application : sommaire et en-tete
+   en ardoise, zone de lecture en page de cahier lignee. */
+.app-header {
+  background: var(--ardoise);
+  backdrop-filter: none;
+  border-bottom: 1px solid var(--ardoise-2);
+}
+
+.app-header__title {
+  font: 400 22px/1.2 var(--font-pinceau);
+}
+
+.app-sidebar {
+  border-right: 1px solid var(--ardoise-2);
+}
+
+.sidebar-brand img {
+  width: 44px;
+  height: auto;
+  background: var(--color-white);
+  padding: 2px;
+}
+
+.sidebar-link.is-active {
+  background: var(--corail-fonce);
+}
+
+.progressbar__fill {
+  background: var(--jaune);
+}
+
+.app-main {
+  background-color: var(--papier);
+  background-image: var(--pattern-cahier);
+  color: var(--encre);
+}
+
+.page {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.page-nav {
+  border-top: var(--trait-fin) dashed var(--encre-douce);
+}
+
+.btn-primary {
+  color: var(--color-white);
+}

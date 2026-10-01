@@ -1,7 +1,7 @@
 {
   "titreModule": "Comptabilité — 07. La Partie Double",
   "sommaireHref": "../index.html",
-  "moduleSuivant": null,
+  "moduleSuivant": { "titre": "Le Journal, le Grand Livre, la Balance", "href": "../08-journal-grand-livre-balance/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "principes", "numero": "01", "titre": "Les principes de la partie double", "fichier": "pages/01-principes.html", "icone": "equal" },

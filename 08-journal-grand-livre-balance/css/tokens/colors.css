@@ -1,0 +1,46 @@
+/* Palette du design system "Cahier de Compta" (theme du PowerPoint
+   COMPTA 2025) : fond cahier gris clair, corail, jaune, teal. */
+:root {
+  /* Tokens du design system (noms utilises par components/cahier.css) */
+  --papier: #efefef;
+  --papier-ligne: #dcdcdc;
+  --papier-carte: #ffffff;
+  --encre: #000000;
+  --encre-douce: #4a4a4a;
+  --ombre-lettrage: #a6a6a6;
+  --corail: #e06666;
+  --corail-fonce: #b83d3d;
+  --corail-clair: #ea9999;
+  --jaune: #ffd966;
+  --encre-sur-jaune: #000000;
+  --teal: #55a7a8;
+  --prune: #461a34;
+  --ardoise: #1f1e21;
+  --ardoise-2: #2e2d31;
+  --ombre-titre: 3px 3px 3px rgba(0, 0, 0, 0.43);
+
+  /* Noms du moteur (layout et composants repris de l'ADV) */
+  --color-white: #ffffff;
+  --color-ink: var(--encre);
+  --color-plum-100: #e4e4e4;
+  --color-plum-300: #9a9a9a;
+
+  --surface-app: var(--ardoise);
+  --surface-app-deep: var(--ardoise);
+  --surface-card: var(--papier);
+  --surface-card-line: var(--papier-ligne);
+  --surface-card-alt: #e4e4e4;
+
+  --text-on-dark: #f2efea;
+  --text-on-dark-soft: #b9b5ae;
+  --text-on-light: var(--encre);
+  --text-on-light-soft: var(--encre-douce);
+
+  --accent-primary: var(--corail-fonce);
+  --accent-primary-strong: #962f2f;
+  --accent-green: #8bc04c;
+
+  --state-error-bg: #fbeaea;
+
+  --focus-ring: 0 0 0 3px rgba(184, 61, 61, 0.5);
+}

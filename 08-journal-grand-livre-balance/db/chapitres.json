@@ -1,0 +1,16 @@
+{
+  "titreModule": "Comptabilité — 08. Le Journal, le Grand Livre, la Balance",
+  "sommaireHref": "../index.html",
+  "moduleSuivant": null,
+  "chapitres": [
+    { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
+    { "id": "journal", "numero": "01", "titre": "Qu'est-ce qu'un journal ?", "fichier": "pages/01-journal.html", "icone": "book-open" },
+    { "id": "saisie-journaux", "numero": "02", "titre": "La saisie des journaux", "fichier": "pages/02-saisie-journaux.html", "icone": "pen-line" },
+    { "id": "journaux-tresorerie", "numero": "03", "titre": "Les journaux de trésorerie", "fichier": "pages/03-journaux-tresorerie.html", "icone": "banknote" },
+    { "id": "journaux-achats-ventes", "numero": "04", "titre": "Journaux d'achats, de ventes et d'OD", "fichier": "pages/04-journaux-achats-ventes-od.html", "icone": "repeat" },
+    { "id": "grand-livre", "numero": "05", "titre": "Le Grand Livre", "fichier": "pages/05-grand-livre.html", "icone": "library" },
+    { "id": "balance", "numero": "06", "titre": "La Balance", "fichier": "pages/06-balance.html", "icone": "scale" },
+    { "id": "chronologie", "numero": "07", "titre": "La chronologie des travaux comptables", "fichier": "pages/07-chronologie.html", "icone": "list-ordered" },
+    { "id": "conclusion", "numero": null, "titre": "Conclusion", "fichier": "pages/08-conclusion.html", "icone": "flag" }
+  ]
+}
