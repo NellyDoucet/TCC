@@ -1,0 +1,31 @@
+{
+  "id": "pc-app-2",
+  "title": "Application 2 - Le plan comptable (charges et produits)",
+  "intro": "Telechargez le fichier, indiquez le numero de compte de chaque operation, enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
+  "sheet": "Recherche des comptes",
+  "type": "cells",
+  "cells": [
+    { "ref": "B5", "answer": 601000, "explanation": "Achats de matieres premieres." },
+    { "ref": "B6", "answer": 215400, "explanation": "Materiel industriel." },
+    { "ref": "B7", "answer": 701000, "explanation": "Ventes de produits finis." },
+    { "ref": "B8", "answer": 606400, "explanation": "Fournitures administratives." },
+    { "ref": "B9", "answer": 606300, "explanation": "Fournitures d'entretien et petit equipement." },
+    { "ref": "B10", "answer": 706000, "explanation": "Prestations de services." },
+    { "ref": "B11", "answer": 602100, "explanation": "Matieres consommables stockees." },
+    { "ref": "B12", "answer": 707000, "explanation": "Ventes de marchandises." },
+    { "ref": "B13", "answer": 215400, "explanation": "Materiel industriel." },
+    { "ref": "B14", "answer": 624100, "explanation": "Transports sur achats." },
+    { "ref": "B15", "answer": 607000, "explanation": "Achats de marchandises." },
+    { "ref": "B16", "answer": 602200, "explanation": "Fournitures consommables stockees." },
+    { "ref": "B17", "answer": 706000, "explanation": "Prestations de services." },
+    { "ref": "B18", "answer": 205000, "explanation": "Logiciels." },
+    { "ref": "B19", "answer": 218300, "explanation": "Materiel de bureau et informatique." },
+    { "ref": "B20", "answer": 707000, "explanation": "Ventes de marchandises." },
+    { "ref": "B21", "answer": 602200, "explanation": "Fournitures consommables stockees." },
+    { "ref": "B22", "answer": 708500, "explanation": "Ports et frais accessoires factures." },
+    { "ref": "B23", "answer": 618300, "explanation": "Documentation technique." },
+    { "ref": "B24", "answer": 707000, "explanation": "Ventes de marchandises." },
+    { "ref": "B25", "answer": 606300, "explanation": "Fournitures d'entretien et petit equipement." },
+    { "ref": "B26", "answer": 706000, "explanation": "Prestations de services." }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pc-app-3",
+  "title": "Application 3 - Compte de resultat et Bilan",
+  "intro": "A partir de la balance des comptes fournie dans l'enonce, completez les totaux du compte de resultat et du bilan, puis deposez le fichier pour une correction automatique.",
+  "sheet": "Compte de resultat",
+  "type": "cells",
+  "cells": [
+    { "ref": "B5", "sheet": "Compte de resultat", "answer": 174700, "explanation": "Total des charges d'exploitation." },
+    { "ref": "B6", "sheet": "Compte de resultat", "answer": 155900, "explanation": "Total des produits d'exploitation." },
+    { "ref": "B7", "sheet": "Compte de resultat", "answer": 1200, "explanation": "Total des charges financieres." },
+    { "ref": "B8", "sheet": "Compte de resultat", "answer": 200, "explanation": "Total des produits financiers." },
+    { "ref": "B9", "sheet": "Compte de resultat", "answer": 800, "explanation": "Total des charges exceptionnelles." },
+    { "ref": "B10", "sheet": "Compte de resultat", "answer": 300, "explanation": "Total des produits exceptionnels." },
+    { "ref": "B11", "sheet": "Compte de resultat", "answer": 176700, "explanation": "TOTAL DES CHARGES." },
+    { "ref": "B12", "sheet": "Compte de resultat", "answer": 156400, "explanation": "TOTAL DES PRODUITS." },
+    { "ref": "B13", "sheet": "Compte de resultat", "answer": 20300, "explanation": "Perte = 176 700 - 156 400." },
+    { "ref": "B14", "sheet": "Compte de resultat", "answer": 176700, "explanation": "TOTAL GENERAL." },
+
+    { "ref": "B5", "sheet": "Bilan", "answer": 41500, "explanation": "TOTAL DE L'ACTIF IMMOBILISE." },
+    { "ref": "B6", "sheet": "Bilan", "answer": 29700, "explanation": "TOTAL DES CAPITAUX PROPRES (capital 50 000 - perte 20 300)." },
+    { "ref": "B7", "sheet": "Bilan", "answer": 13200, "explanation": "TOTAL DE L'ACTIF CIRCULANT." },
+    { "ref": "B8", "sheet": "Bilan", "answer": 25000, "explanation": "TOTAL DES DETTES." },
+    { "ref": "B9", "sheet": "Bilan", "answer": 54700, "explanation": "TOTAL GENERAL." }
+  ]
+}

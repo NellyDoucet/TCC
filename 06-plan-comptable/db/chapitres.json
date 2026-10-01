@@ -1,0 +1,18 @@
+{
+  "titreModule": "Comptabilité — 06. Le Plan Comptable",
+  "sommaireHref": "../index.html",
+  "moduleSuivant": null,
+  "chapitres": [
+    { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
+    { "id": "intro", "numero": "01", "titre": "Qu'est-ce qu'un compte comptable ?", "fichier": "pages/01-intro.html", "icone": "help-circle" },
+    { "id": "classes", "numero": "02", "titre": "Les classes du PCG", "fichier": "pages/02-classes.html", "icone": "layers" },
+    { "id": "comptes-bilan", "numero": "03", "titre": "Les comptes de bilan", "fichier": "pages/03-comptes-bilan.html", "icone": "scale" },
+    { "id": "comptes-gestion", "numero": "04", "titre": "Les comptes de gestion", "fichier": "pages/04-comptes-gestion.html", "icone": "calculator" },
+    { "id": "plan-entreprise", "numero": "05", "titre": "Le plan de comptes de l'entreprise", "fichier": "pages/05-plan-entreprise.html", "icone": "list-tree" },
+    { "id": "application-1", "numero": "A1", "titre": "Application 1", "fichier": "pages/application-1.html", "icone": "pencil", "aExercice": true },
+    { "id": "application-2", "numero": "A2", "titre": "Application 2", "fichier": "pages/application-2.html", "icone": "pencil", "aExercice": true, "deverrouillePar": { "chapitre": "application-1", "seuil": 70 } },
+    { "id": "application-3", "numero": "A3", "titre": "Application 3", "fichier": "pages/application-3.html", "icone": "pencil", "aExercice": true, "deverrouillePar": { "chapitre": "application-2", "seuil": 70 } },
+    { "id": "application-4", "numero": "A4", "titre": "Application 4", "fichier": "pages/application-4.html", "icone": "pencil", "aExercice": true, "deverrouillePar": { "chapitre": "application-3", "seuil": 70 } },
+    { "id": "tp", "numero": "TP", "titre": "TP - Le Compte de Résultat, le Bilan et le Plan Comptable", "fichier": "pages/tp.html", "icone": "clipboard-check", "aExercice": true, "deverrouillePar": { "chapitre": "application-4", "seuil": 70 } }
+  ]
+}

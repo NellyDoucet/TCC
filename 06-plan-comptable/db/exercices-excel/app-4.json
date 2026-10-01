@@ -1,0 +1,25 @@
+{
+  "id": "pc-app-4",
+  "title": "Application 4 - Compte de resultat et Bilan",
+  "intro": "A partir de la balance des comptes fournie dans l'enonce, completez les totaux du compte de resultat et du bilan, puis deposez le fichier pour une correction automatique.",
+  "sheet": "Compte de resultat",
+  "type": "cells",
+  "cells": [
+    { "ref": "B5", "sheet": "Compte de resultat", "answer": 2886000, "explanation": "Sous-total charges d'exploitation." },
+    { "ref": "B6", "sheet": "Compte de resultat", "answer": 3278000, "explanation": "Sous-total produits d'exploitation." },
+    { "ref": "B7", "sheet": "Compte de resultat", "answer": 9000, "explanation": "Sous-total charges financieres." },
+    { "ref": "B8", "sheet": "Compte de resultat", "answer": 18000, "explanation": "Sous-total produits financiers." },
+    { "ref": "B9", "sheet": "Compte de resultat", "answer": 4000, "explanation": "Sous-total charges exceptionnelles." },
+    { "ref": "B10", "sheet": "Compte de resultat", "answer": 3000, "explanation": "Sous-total produits exceptionnels." },
+    { "ref": "B11", "sheet": "Compte de resultat", "answer": 2899000, "explanation": "TOTAL DES CHARGES." },
+    { "ref": "B12", "sheet": "Compte de resultat", "answer": 3299000, "explanation": "TOTAL DES PRODUITS." },
+    { "ref": "B13", "sheet": "Compte de resultat", "answer": 400000, "explanation": "Benefice = 3 299 000 - 2 899 000." },
+    { "ref": "B14", "sheet": "Compte de resultat", "answer": 3299000, "explanation": "TOTAL GENERAL." },
+
+    { "ref": "B5", "sheet": "Bilan", "answer": 1029000, "explanation": "TOTAL ACTIF IMMOBILISE." },
+    { "ref": "B6", "sheet": "Bilan", "answer": 1153000, "explanation": "TOTAL CAPITAUX PROPRES (dont le benefice de 400 000)." },
+    { "ref": "B7", "sheet": "Bilan", "answer": 298000, "explanation": "TOTAL ACTIF CIRCULANT." },
+    { "ref": "B8", "sheet": "Bilan", "answer": 174000, "explanation": "TOTAL DETTES." },
+    { "ref": "B9", "sheet": "Bilan", "answer": 1327000, "explanation": "TOTAL GENERAL." }
+  ]
+}

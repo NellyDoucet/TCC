@@ -1,7 +1,7 @@
 {
   "titreModule": "Comptabilité — 05. Le Bilan",
   "sommaireHref": "../index.html",
-  "moduleSuivant": null,
+  "moduleSuivant": { "titre": "Le Plan Comptable", "href": "../06-plan-comptable/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "intro", "numero": "01", "titre": "Le Bilan", "fichier": "pages/01-intro.html", "icone": "scale" },

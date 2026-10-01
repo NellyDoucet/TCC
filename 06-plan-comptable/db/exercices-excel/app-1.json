@@ -1,0 +1,31 @@
+{
+  "id": "pc-app-1",
+  "title": "Application 1 - Le plan comptable (les charges)",
+  "intro": "Telechargez le fichier, indiquez le numero de compte de chaque operation, enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
+  "sheet": "Recherche des comptes",
+  "type": "cells",
+  "cells": [
+    { "ref": "B5", "answer": 607000, "explanation": "Achat de marchandises." },
+    { "ref": "B6", "answer": 623000, "explanation": "Publicite, publications, relations publiques." },
+    { "ref": "B7", "answer": 616000, "explanation": "Primes d'assurances." },
+    { "ref": "B8", "answer": 623800, "explanation": "Pourboires, dons courants." },
+    { "ref": "B9", "answer": 602000, "explanation": "Achats matieres fournitures consommables." },
+    { "ref": "B10", "answer": 615000, "explanation": "Entretien et reparations." },
+    { "ref": "B11", "answer": 613000, "explanation": "Locations." },
+    { "ref": "B12", "answer": 627000, "explanation": "Services bancaires." },
+    { "ref": "B13", "answer": 665000, "explanation": "Escomptes accordes." },
+    { "ref": "B14", "answer": 601000, "explanation": "Achats de matieres premieres." },
+    { "ref": "B15", "answer": 606400, "explanation": "Fournitures administratives." },
+    { "ref": "B16", "answer": 625000, "explanation": "Deplacements, missions et receptions." },
+    { "ref": "B17", "answer": 621000, "explanation": "Personnel exterieur a l'entreprise." },
+    { "ref": "B18", "answer": 626000, "explanation": "Frais postaux et de telecom." },
+    { "ref": "B19", "answer": 635400, "explanation": "Droits d'enregistrement et de timbres." },
+    { "ref": "B20", "answer": 622600, "explanation": "Honoraires." },
+    { "ref": "B21", "answer": 624100, "explanation": "Transports sur achats." },
+    { "ref": "B22", "answer": 658200, "explanation": "Penalites, amendes fiscales et penales." },
+    { "ref": "B23", "answer": 606300, "explanation": "Fournitures d'entretien et petit equipement." },
+    { "ref": "B24", "answer": 641000, "explanation": "Remuneration du personnel." },
+    { "ref": "B25", "answer": 661000, "explanation": "Charges d'interets." },
+    { "ref": "B26", "answer": 606100, "explanation": "Fournitures non stockables (eau, energie)." }
+  ]
+}
