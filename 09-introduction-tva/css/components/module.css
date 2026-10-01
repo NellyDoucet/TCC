@@ -1,0 +1,208 @@
+/* Mises en page propres au module (blocs, colonnes, galeries, GIF). */
+.bloc {
+  margin-bottom: var(--pas-6);
+}
+
+.bloc--centre {
+  text-align: center;
+}
+
+.bloc > p {
+  max-width: 62ch;
+  margin-inline: auto;
+}
+
+.bloc--centre .cc-titre-section {
+  text-align: center;
+}
+
+.titre-partie {
+  text-align: center;
+  margin-bottom: var(--pas-5);
+}
+
+.titre-partie .cc-titre-section {
+  margin-bottom: 0;
+}
+
+.separateur {
+  border: none;
+  border-top: var(--trait-fin) dashed var(--encre-douce);
+  margin: var(--pas-6) 0;
+}
+
+.deux-colonnes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--pas-5);
+  text-align: left;
+}
+
+.deux-colonnes h3 {
+  font: 400 28px/1.2 var(--font-capitales);
+  color: var(--corail-fonce);
+  margin-bottom: var(--pas-3);
+}
+
+.liste-questions {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--pas-4);
+  display: grid;
+  gap: var(--pas-3);
+  max-width: 62ch;
+  text-align: left;
+}
+
+.liste-questions li::before {
+  content: "?";
+  font-family: var(--font-pinceau);
+  color: var(--corail);
+  margin-right: var(--pas-2);
+}
+
+.exemple {
+  font-size: 19px;
+  color: var(--encre-douce);
+}
+
+.exemple::before {
+  content: "Exemple : ";
+  font-family: var(--font-capitales);
+  color: var(--corail-fonce);
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--pas-5);
+  margin-top: var(--pas-5);
+}
+
+.galerie figure {
+  margin: 0;
+  flex: 0 1 220px;
+}
+
+.galerie img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.galerie figcaption {
+  font: 400 13px/1.4 var(--font-chiffres);
+  color: var(--encre-douce);
+  margin-top: var(--pas-2);
+  text-align: center;
+}
+
+.gif {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.page-garde {
+  position: relative;
+  padding-top: var(--pas-3);
+}
+
+.page-garde__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: auto;
+  background: var(--color-white);
+}
+
+.page-garde__gif {
+  margin: var(--pas-5) auto;
+}
+
+.cc-tableau-wrap {
+  margin-inline: auto;
+}
+
+.frise td:first-child {
+  font: 400 26px/1 var(--font-pinceau);
+  color: var(--corail-fonce);
+  width: 110px;
+}
+
+.frise td:last-child {
+  text-align: left;
+  font-size: 16px;
+}
+
+.nouvel-ami {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--pas-5);
+  align-items: center;
+  justify-items: center;
+}
+
+.nouvel-ami .pcg-2025 {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .page-garde__logo {
+    position: static;
+    display: block;
+    margin-bottom: var(--pas-3);
+  }
+}
+
+.progressbar__fill {
+  background: var(--jaune);
+}
+
+.page-garde__gif {
+  max-width: 400px;
+}
+
+/* Le corail clair ne se lit pas en petit : amorces et questions en corail fonce. */
+.cc-attention__amorce,
+.cc-question__q {
+  color: var(--corail-fonce);
+  text-shadow: none;
+}
+
+/* Liste centree a fleches (ex. les 7 principes comptables). */
+.liste-fleches {
+  list-style: none;
+  padding: 0;
+  margin: var(--pas-4) 0 0;
+  display: grid;
+  gap: var(--pas-2);
+  justify-items: center;
+}
+
+.liste-fleches li {
+  font: 400 clamp(22px, 3.2vw, 28px)/1.25 var(--font-main);
+  color: var(--corail-fonce);
+}
+
+.liste-fleches li::before {
+  content: "➤ ";
+  color: var(--corail);
+}
+
+.liste-fleches a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.liste-fleches a:hover,
+.liste-fleches a:focus-visible {
+  background: var(--jaune);
+  color: var(--encre-sur-jaune);
+}

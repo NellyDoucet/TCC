@@ -1,7 +1,7 @@
 {
   "titreModule": "Comptabilité — 08. Le Journal, le Grand Livre, la Balance",
   "sommaireHref": "../index.html",
-  "moduleSuivant": null,
+  "moduleSuivant": { "titre": "Introduction à la TVA", "href": "../09-introduction-tva/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "journal", "numero": "01", "titre": "Qu'est-ce qu'un journal ?", "fichier": "pages/01-journal.html", "icone": "book-open" },

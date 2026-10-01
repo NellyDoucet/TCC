@@ -1,0 +1,4 @@
+/* Lignes verticales du cahier, une tous les --ligne-cahier. */
+:root {
+  --pattern-cahier: repeating-linear-gradient(90deg, transparent 0 calc(var(--ligne-cahier) - 1px), var(--papier-ligne) calc(var(--ligne-cahier) - 1px) var(--ligne-cahier));
+}

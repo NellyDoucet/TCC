@@ -1,0 +1,295 @@
+﻿{
+    "cells":  [
+                  {
+                      "ref":  "C5",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  600
+                  },
+                  {
+                      "ref":  "C6",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  935
+                  },
+                  {
+                      "ref":  "C7",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  1266
+                  },
+                  {
+                      "ref":  "C8",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  300
+                  },
+                  {
+                      "ref":  "C9",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  737
+                  },
+                  {
+                      "ref":  "C10",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  822.9
+                  },
+                  {
+                      "ref":  "C11",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  1140
+                  },
+                  {
+                      "ref":  "C12",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  1452
+                  },
+                  {
+                      "ref":  "C13",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  360
+                  },
+                  {
+                      "ref":  "C14",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  432.55
+                  },
+                  {
+                      "ref":  "C18",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  200
+                  },
+                  {
+                      "ref":  "D18",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  40
+                  },
+                  {
+                      "ref":  "C19",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  300
+                  },
+                  {
+                      "ref":  "D19",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  30
+                  },
+                  {
+                      "ref":  "C20",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  521.33
+                  },
+                  {
+                      "ref":  "D20",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  28.67
+                  },
+                  {
+                      "ref":  "C21",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  550
+                  },
+                  {
+                      "ref":  "D21",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  110
+                  },
+                  {
+                      "ref":  "C22",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  1000
+                  },
+                  {
+                      "ref":  "D22",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  100
+                  },
+                  {
+                      "ref":  "C23",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  1199.05
+                  },
+                  {
+                      "ref":  "D23",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  65.95
+                  },
+                  {
+                      "ref":  "C24",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  1191.67
+                  },
+                  {
+                      "ref":  "D24",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  238.33
+                  },
+                  {
+                      "ref":  "C25",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  800
+                  },
+                  {
+                      "ref":  "D25",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  80
+                  },
+                  {
+                      "ref":  "C26",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  360.19
+                  },
+                  {
+                      "ref":  "D26",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  19.81
+                  },
+                  {
+                      "ref":  "C27",
+                      "explanation":  "HT = TTC / (1 + taux de TVA).",
+                      "answer":  825
+                  },
+                  {
+                      "ref":  "D27",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  165
+                  },
+                  {
+                      "ref":  "B31",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445660
+                  },
+                  {
+                      "ref":  "B32",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  },
+                  {
+                      "ref":  "B33",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445620
+                  },
+                  {
+                      "ref":  "B34",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  },
+                  {
+                      "ref":  "B35",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445660
+                  },
+                  {
+                      "ref":  "B36",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  },
+                  {
+                      "ref":  "B37",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445620
+                  },
+                  {
+                      "ref":  "B38",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  },
+                  {
+                      "ref":  "B39",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445660
+                  },
+                  {
+                      "ref":  "B40",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  },
+                  {
+                      "ref":  "D44",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  1440
+                  },
+                  {
+                      "ref":  "E44",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  240
+                  },
+                  {
+                      "ref":  "F44",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445620
+                  },
+                  {
+                      "ref":  "D45",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  2400
+                  },
+                  {
+                      "ref":  "E45",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  400
+                  },
+                  {
+                      "ref":  "F45",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  },
+                  {
+                      "ref":  "D46",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  770
+                  },
+                  {
+                      "ref":  "E46",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  70
+                  },
+                  {
+                      "ref":  "F46",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445660
+                  },
+                  {
+                      "ref":  "D47",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  1140
+                  },
+                  {
+                      "ref":  "E47",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  190
+                  },
+                  {
+                      "ref":  "F47",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  },
+                  {
+                      "ref":  "D48",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  6000
+                  },
+                  {
+                      "ref":  "E48",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  1000
+                  },
+                  {
+                      "ref":  "F48",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445620
+                  },
+                  {
+                      "ref":  "D49",
+                      "explanation":  "TTC = HT x (1 + taux de TVA).",
+                      "answer":  720
+                  },
+                  {
+                      "ref":  "E49",
+                      "explanation":  "TVA = TTC - HT.",
+                      "answer":  120
+                  },
+                  {
+                      "ref":  "F49",
+                      "explanation":  "445660 TVA deductible sur ABS, 445620 TVA deductible sur immobilisations, 445710 TVA collectee.",
+                      "answer":  445710
+                  }
+              ],
+    "sheet":  "Application"
+}
