@@ -1,0 +1,15 @@
+{
+  "titreModule": "Comptabilité — 07. La Partie Double",
+  "sommaireHref": "../index.html",
+  "moduleSuivant": null,
+  "chapitres": [
+    { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
+    { "id": "principes", "numero": "01", "titre": "Les principes de la partie double", "fichier": "pages/01-principes.html", "icone": "equal" },
+    { "id": "impact", "numero": "02", "titre": "Impact de la partie double", "fichier": "pages/02-impact.html", "icone": "scale" },
+    { "id": "debit-credit", "numero": "03", "titre": "La notion de débit et de crédit", "fichier": "pages/03-debit-credit.html", "icone": "arrow-left-right" },
+    { "id": "trois-operations", "numero": "04", "titre": "Les trois types d'opérations comptables", "fichier": "pages/04-trois-operations.html", "icone": "list-tree" },
+    { "id": "ecriture-comptable", "numero": "05", "titre": "L'écriture comptable", "fichier": "pages/05-ecriture-comptable.html", "icone": "pen-line" },
+    { "id": "structure-ecriture", "numero": "06", "titre": "La structure de l'écriture comptable", "fichier": "pages/06-structure-ecriture.html", "icone": "table" },
+    { "id": "conclusion", "numero": null, "titre": "Conclusion", "fichier": "pages/07-conclusion.html", "icone": "flag" }
+  ]
+}

@@ -1,0 +1,29 @@
+<div class="titre-partie">
+  <div class="cc-principe-entete">
+    <span class="cc-principe-icone" data-lucide="table"></span>
+    <h1 class="cc-titre-section">La structure de l'écriture comptable</h1>
+  </div>
+</div>
+
+<section class="bloc bloc--centre">
+  <p>Une écriture comptable rassemble toujours les mêmes éléments : la <strong>date</strong> de l'opération, le <strong>numéro de compte</strong> (issu du plan comptable), l'<strong>intitulé du compte</strong>, le <strong>montant au débit</strong> ou au <strong>crédit</strong>, et un <strong>libellé</strong> qui précise l'opération (souvent la référence de la pièce justificative).</p>
+</section>
+
+<section class="bloc">
+  <h2 class="cc-titre-section cc-titre-section--noir" style="text-align: center;">Exemple</h2>
+  <div class="cc-journal">
+    <h3 class="cc-journal__titre">JOURNAL</h3>
+    <div class="cc-tableau-wrap">
+      <table class="cc-tableau">
+        <thead><tr><th>Date</th><th>N° compte</th><th>Libellé</th><th>Débit</th><th>Crédit</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="3">05/01/2025</td><td class="cc-compte">607</td><td class="cc-libelle">Achats de marchandises</td><td class="cc-montant">1 000,00 €</td><td class="cc-montant"></td></tr>
+          <tr><td class="cc-compte">44566</td><td class="cc-libelle">TVA déductible sur ABS</td><td class="cc-montant">200,00 €</td><td class="cc-montant"></td></tr>
+          <tr><td class="cc-compte">401</td><td class="cc-libelle cc-credit-libelle">Fournisseurs</td><td class="cc-montant"></td><td class="cc-montant">1 200,00 €</td></tr>
+          <tr class="cc-separateur"><td colspan="5">Facture n° 125 — fournisseur Durand</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="cc-message-cle cc-message-cle--surligne"><span>Les comptes débités sont toujours écrits en premier, puis les comptes crédités avec un libellé décalé vers la droite.</span></p>
+</section>

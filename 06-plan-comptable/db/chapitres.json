@@ -1,7 +1,7 @@
 {
   "titreModule": "Comptabilité — 06. Le Plan Comptable",
   "sommaireHref": "../index.html",
-  "moduleSuivant": null,
+  "moduleSuivant": { "titre": "La Partie Double", "href": "../07-partie-double/" },
   "chapitres": [
     { "id": "accueil", "numero": null, "titre": "Accueil", "fichier": "pages/00-accueil.html", "icone": "house" },
     { "id": "intro", "numero": "01", "titre": "Qu'est-ce qu'un compte comptable ?", "fichier": "pages/01-intro.html", "icone": "help-circle" },
