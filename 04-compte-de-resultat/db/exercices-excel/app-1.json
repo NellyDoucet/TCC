@@ -1,31 +1,218 @@
 {
-  "id": "cr-app-1",
-  "title": "Application 1 - Compte de resultat (entreprise IKOM)",
-  "intro": "Telechargez le fichier, completez le compte de resultat (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "Compte de Résultat",
-  "type": "cells",
-  "cells": [
-    { "ref": "B5", "answer": 91600, "explanation": "Achats de marchandises." },
-    { "ref": "D5", "answer": 172800, "explanation": "Ventes de marchandises." },
-    { "ref": "B6", "answer": 25700, "explanation": "Achats de matieres premieres." },
-    { "ref": "D6", "answer": 4700, "explanation": "Frais de port factures." },
-    { "ref": "B7", "answer": 39800, "explanation": "Achats de services." },
-    { "ref": "B8", "answer": 15700, "explanation": "Impots, taxes et versements assimiles." },
-    { "ref": "B9", "answer": 42300, "explanation": "Frais de personnel." },
-    { "ref": "B10", "answer": 215100, "explanation": "Total des charges d'exploitation = somme des charges d'exploitation." },
-    { "ref": "D10", "answer": 177500, "explanation": "Total des produits d'exploitation = somme des produits d'exploitation." },
-    { "ref": "B12", "answer": 2900, "explanation": "Interets payes." },
-    { "ref": "D12", "answer": 7100, "explanation": "Revenus des actions." },
-    { "ref": "B13", "answer": 2900, "explanation": "Total des charges financieres." },
-    { "ref": "D13", "answer": 7100, "explanation": "Total des produits financiers." },
-    { "ref": "B15", "answer": 6400, "explanation": "Charges exceptionnelles." },
-    { "ref": "D15", "answer": 9100, "explanation": "Produits exceptionnels." },
-    { "ref": "B16", "answer": 6400, "explanation": "Total des charges exceptionnelles." },
-    { "ref": "D16", "answer": 9100, "explanation": "Total des produits exceptionnels." },
-    { "ref": "B17", "answer": 224400, "explanation": "TOTAL DES CHARGES = 215 100 + 2 900 + 6 400." },
-    { "ref": "D17", "answer": 193700, "explanation": "TOTAL DES PRODUITS = 177 500 + 7 100 + 9 100." },
-    { "ref": "D18", "answer": 30700, "explanation": "Perte = total des charges - total des produits = 224 400 - 193 700." },
-    { "ref": "B19", "answer": 224400, "explanation": "TOTAL GENERAL cote charges." },
-    { "ref": "D19", "answer": 224400, "explanation": "TOTAL GENERAL cote produits (produits + perte)." }
-  ]
+    "id":  "cr-app-1",
+    "title":  "Application 1 - Compte de resultat (entreprise IKOM)",
+    "intro":  "Telechargez le fichier, completez le compte de resultat (libelles et montants dans la bonne categorie, puis totaux, resultat et total general), enregistrez-le, puis deposez-le ci-dessous.",
+    "sheet":  "Compte de Résultat",
+    "type":  "cells",
+    "zones":  [
+                  {
+                      "name":  "Charges d\u0027exploitation",
+                      "entries":  [
+                                      {
+                                          "label":  "Achats de marchandises",
+                                          "amount":  91600,
+                                          "explanation":  "Achats de marchandises (compte 607).",
+                                          "keywords":  [
+                                                           "marchandise"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Achats de matieres et fournitures",
+                                          "amount":  25700,
+                                          "explanation":  "Achats de matieres et fournitures.",
+                                          "keywords":  [
+                                                           "matiere",
+                                                           "fourniture"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Achats de services",
+                                          "amount":  39800,
+                                          "explanation":  "Achats de services.",
+                                          "keywords":  [
+                                                           "service"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Impots, taxes et versements assimiles",
+                                          "amount":  15700,
+                                          "explanation":  "Impots et taxes.",
+                                          "keywords":  [
+                                                           "impot",
+                                                           "taxe"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Frais de personnel",
+                                          "amount":  42300,
+                                          "explanation":  "Frais de personnel.",
+                                          "keywords":  [
+                                                           "personnel",
+                                                           "salaire"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  9,
+                      "amountCol":  "B",
+                      "labelCol":  "A",
+                      "rowFrom":  5
+                  },
+                  {
+                      "name":  "Produits d\u0027exploitation",
+                      "entries":  [
+                                      {
+                                          "label":  "Ventes de marchandises",
+                                          "amount":  172800,
+                                          "explanation":  "Ventes de marchandises.",
+                                          "keywords":  [
+                                                           "vente",
+                                                           "marchandise"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Frais de port factures",
+                                          "amount":  4700,
+                                          "explanation":  "Frais de port factures.",
+                                          "keywords":  [
+                                                           "port"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  9,
+                      "amountCol":  "D",
+                      "labelCol":  "C",
+                      "rowFrom":  5
+                  },
+                  {
+                      "name":  "Charges financieres",
+                      "entries":  [
+                                      {
+                                          "label":  "Interets payes",
+                                          "amount":  2900,
+                                          "explanation":  "Interets payes.",
+                                          "keywords":  [
+                                                           "interet"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  16,
+                      "amountCol":  "B",
+                      "labelCol":  "A",
+                      "rowFrom":  12
+                  },
+                  {
+                      "name":  "Produits financiers",
+                      "entries":  [
+                                      {
+                                          "label":  "Revenus des actions",
+                                          "amount":  7100,
+                                          "explanation":  "Revenus des actions.",
+                                          "keywords":  [
+                                                           "revenu",
+                                                           "action"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  16,
+                      "amountCol":  "D",
+                      "labelCol":  "C",
+                      "rowFrom":  12
+                  },
+                  {
+                      "name":  "Charges exceptionnelles",
+                      "entries":  [
+                                      {
+                                          "label":  "Charges exceptionnelles",
+                                          "amount":  6400,
+                                          "explanation":  "Charges exceptionnelles.",
+                                          "keywords":  [
+                                                           "exceptionnel"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  23,
+                      "amountCol":  "B",
+                      "labelCol":  "A",
+                      "rowFrom":  19
+                  },
+                  {
+                      "name":  "Produits exceptionnels",
+                      "entries":  [
+                                      {
+                                          "label":  "Produits exceptionnels",
+                                          "amount":  9100,
+                                          "explanation":  "Produits exceptionnels.",
+                                          "keywords":  [
+                                                           "exceptionnel"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  23,
+                      "amountCol":  "D",
+                      "labelCol":  "C",
+                      "rowFrom":  19
+                  }
+              ],
+    "cells":  [
+                  {
+                      "ref":  "B10",
+                      "explanation":  "Total des charges d\u0027exploitation.",
+                      "answer":  215100
+                  },
+                  {
+                      "ref":  "D10",
+                      "explanation":  "Total des produits d\u0027exploitation.",
+                      "answer":  177500
+                  },
+                  {
+                      "ref":  "B17",
+                      "explanation":  "Total des charges financieres.",
+                      "answer":  2900
+                  },
+                  {
+                      "ref":  "D17",
+                      "explanation":  "Total des produits financiers.",
+                      "answer":  7100
+                  },
+                  {
+                      "ref":  "B24",
+                      "explanation":  "Total des charges exceptionnelles.",
+                      "answer":  6400
+                  },
+                  {
+                      "ref":  "D24",
+                      "explanation":  "Total des produits exceptionnels.",
+                      "answer":  9100
+                  },
+                  {
+                      "ref":  "B25",
+                      "explanation":  "TOTAL DES CHARGES = 215 100 + 2 900 + 6 400.",
+                      "answer":  224400
+                  },
+                  {
+                      "ref":  "D25",
+                      "explanation":  "TOTAL DES PRODUITS = 177 500 + 7 100 + 9 100.",
+                      "answer":  193700
+                  },
+                  {
+                      "ref":  "B26",
+                      "explanation":  "Pas de benefice : les charges depassent les produits.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "D26",
+                      "explanation":  "Perte = 224 400 - 193 700 (colonne Perte, cote produits).",
+                      "answer":  30700
+                  },
+                  {
+                      "ref":  "B27",
+                      "explanation":  "TOTAL GENERAL cote charges.",
+                      "answer":  224400
+                  },
+                  {
+                      "ref":  "D27",
+                      "explanation":  "TOTAL GENERAL cote produits (produits + perte).",
+                      "answer":  224400
+                  }
+              ]
 }

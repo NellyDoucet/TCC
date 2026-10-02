@@ -1,20 +1,122 @@
 {
-  "id": "cr-app-4",
-  "title": "Application 4 - Compte de resultat",
-  "intro": "Telechargez le fichier, completez le compte de resultat (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "Compte de Résultat",
-  "type": "cells",
-  "cells": [
-    { "ref": "B5", "answer": 790000, "explanation": "Achats de biens et services marchands." },
-    { "ref": "D5", "answer": 1277000, "explanation": "Ventes = total des produits - loyer recu (1 297 000 - 20 000)." },
-    { "ref": "B6", "answer": 327000, "explanation": "Autres charges." },
-    { "ref": "D6", "answer": 20000, "explanation": "Loyer recu." },
-    { "ref": "B7", "answer": 1117000, "explanation": "Total des charges d'exploitation = 790 000 + 327 000." },
-    { "ref": "D7", "answer": 1297000, "explanation": "Total des produits d'exploitation." },
-    { "ref": "B14", "answer": 1117000, "explanation": "TOTAL DES CHARGES." },
-    { "ref": "D14", "answer": 1297000, "explanation": "TOTAL DES PRODUITS." },
-    { "ref": "B15", "answer": 180000, "explanation": "Benefice (donne par l'enonce)." },
-    { "ref": "B16", "answer": 1297000, "explanation": "TOTAL GENERAL cote charges (charges + benefice)." },
-    { "ref": "D16", "answer": 1297000, "explanation": "TOTAL GENERAL cote produits." }
-  ]
+    "id":  "cr-app-4",
+    "title":  "Application 4 - Compte de resultat",
+    "intro":  "Telechargez le fichier, completez le compte de resultat (libelles et montants dans la bonne categorie, puis totaux, resultat et total general), enregistrez-le, puis deposez-le ci-dessous.",
+    "sheet":  "Compte de Résultat",
+    "type":  "cells",
+    "zones":  [
+                  {
+                      "name":  "Charges d\u0027exploitation",
+                      "entries":  [
+                                      {
+                                          "label":  "Achats de biens et services marchands",
+                                          "amount":  790000,
+                                          "explanation":  "Achats de biens et services marchands.",
+                                          "keywords":  [
+                                                           "achat"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Autres charges",
+                                          "amount":  327000,
+                                          "explanation":  "Autres charges.",
+                                          "keywords":  [
+                                                           "autre",
+                                                           "charge"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  9,
+                      "amountCol":  "B",
+                      "labelCol":  "A",
+                      "rowFrom":  5
+                  },
+                  {
+                      "name":  "Produits d\u0027exploitation",
+                      "entries":  [
+                                      {
+                                          "label":  "Ventes",
+                                          "amount":  1277000,
+                                          "explanation":  "Ventes (1 297 000 - loyer recu).",
+                                          "keywords":  [
+                                                           "vente"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Loyer recu",
+                                          "amount":  20000,
+                                          "explanation":  "Loyer recu.",
+                                          "keywords":  [
+                                                           "loyer"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  9,
+                      "amountCol":  "D",
+                      "labelCol":  "C",
+                      "rowFrom":  5
+                  }
+              ],
+    "cells":  [
+                  {
+                      "ref":  "B10",
+                      "explanation":  "Total des charges d\u0027exploitation.",
+                      "answer":  1117000
+                  },
+                  {
+                      "ref":  "D10",
+                      "explanation":  "Total des produits d\u0027exploitation.",
+                      "answer":  1297000
+                  },
+                  {
+                      "ref":  "B14",
+                      "explanation":  "Aucune charge financiere : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "D14",
+                      "explanation":  "Aucun produit financier : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "B18",
+                      "explanation":  "Aucune charge exceptionnelle : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "D18",
+                      "explanation":  "Aucun produit exceptionnel : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "B19",
+                      "explanation":  "TOTAL DES CHARGES.",
+                      "answer":  1117000
+                  },
+                  {
+                      "ref":  "D19",
+                      "explanation":  "TOTAL DES PRODUITS.",
+                      "answer":  1297000
+                  },
+                  {
+                      "ref":  "B20",
+                      "explanation":  "Benefice = 1 297 000 - 1 117 000.",
+                      "answer":  180000
+                  },
+                  {
+                      "ref":  "D20",
+                      "explanation":  "Pas de perte : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "B21",
+                      "explanation":  "TOTAL GENERAL cote charges (charges + benefice).",
+                      "answer":  1297000
+                  },
+                  {
+                      "ref":  "D21",
+                      "explanation":  "TOTAL GENERAL cote produits.",
+                      "answer":  1297000
+                  }
+              ]
 }

@@ -1,24 +1,155 @@
 {
-  "id": "cr-app-2",
-  "title": "Application 2 - Compte de resultat",
-  "intro": "Telechargez le fichier, completez le compte de resultat (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "Compte de Résultat",
-  "type": "cells",
-  "cells": [
-    { "ref": "B5", "answer": 700000, "explanation": "Achats utilises." },
-    { "ref": "D5", "answer": 880000, "explanation": "Ventes." },
-    { "ref": "B6", "answer": 43000, "explanation": "Achats - services divers." },
-    { "ref": "B7", "answer": 53000, "explanation": "Salaires." },
-    { "ref": "B8", "answer": 22000, "explanation": "Charges sociales." },
-    { "ref": "B9", "answer": 30000, "explanation": "Impots." },
-    { "ref": "B10", "answer": 848000, "explanation": "Total des charges d'exploitation." },
-    { "ref": "D10", "answer": 880000, "explanation": "Total des produits d'exploitation." },
-    { "ref": "B12", "answer": 21000, "explanation": "Interets payes." },
-    { "ref": "B13", "answer": 21000, "explanation": "Total des charges financieres." },
-    { "ref": "B17", "answer": 869000, "explanation": "TOTAL DES CHARGES = 848 000 + 21 000." },
-    { "ref": "D17", "answer": 880000, "explanation": "TOTAL DES PRODUITS." },
-    { "ref": "B18", "answer": 11000, "explanation": "Benefice = 880 000 - 869 000." },
-    { "ref": "B19", "answer": 880000, "explanation": "TOTAL GENERAL cote charges (charges + benefice)." },
-    { "ref": "D19", "answer": 880000, "explanation": "TOTAL GENERAL cote produits." }
-  ]
+    "id":  "cr-app-2",
+    "title":  "Application 2 - Compte de resultat",
+    "intro":  "Telechargez le fichier, completez le compte de resultat (libelles et montants dans la bonne categorie, puis totaux, resultat et total general), enregistrez-le, puis deposez-le ci-dessous.",
+    "sheet":  "Compte de Résultat",
+    "type":  "cells",
+    "zones":  [
+                  {
+                      "name":  "Charges d\u0027exploitation",
+                      "entries":  [
+                                      {
+                                          "label":  "Achats utilises",
+                                          "amount":  700000,
+                                          "explanation":  "Achats utilises.",
+                                          "keywords":  [
+                                                           "achat"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Achats - services divers",
+                                          "amount":  43000,
+                                          "explanation":  "Achats de services divers.",
+                                          "keywords":  [
+                                                           "service"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Salaires",
+                                          "amount":  53000,
+                                          "explanation":  "Salaires.",
+                                          "keywords":  [
+                                                           "salaire"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Charges sociales",
+                                          "amount":  22000,
+                                          "explanation":  "Charges sociales.",
+                                          "keywords":  [
+                                                           "social"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Impots",
+                                          "amount":  30000,
+                                          "explanation":  "Impots.",
+                                          "keywords":  [
+                                                           "impot",
+                                                           "taxe"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  9,
+                      "amountCol":  "B",
+                      "labelCol":  "A",
+                      "rowFrom":  5
+                  },
+                  {
+                      "name":  "Produits d\u0027exploitation",
+                      "entries":  [
+                                      {
+                                          "label":  "Ventes",
+                                          "amount":  880000,
+                                          "explanation":  "Ventes.",
+                                          "keywords":  [
+                                                           "vente"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  9,
+                      "amountCol":  "D",
+                      "labelCol":  "C",
+                      "rowFrom":  5
+                  },
+                  {
+                      "name":  "Charges financieres",
+                      "entries":  [
+                                      {
+                                          "label":  "Interets payes",
+                                          "amount":  21000,
+                                          "explanation":  "Interets payes.",
+                                          "keywords":  [
+                                                           "interet"
+                                                       ]
+                                      }
+                                  ],
+                      "rowTo":  16,
+                      "amountCol":  "B",
+                      "labelCol":  "A",
+                      "rowFrom":  12
+                  }
+              ],
+    "cells":  [
+                  {
+                      "ref":  "B10",
+                      "explanation":  "Total des charges d\u0027exploitation.",
+                      "answer":  848000
+                  },
+                  {
+                      "ref":  "D10",
+                      "explanation":  "Total des produits d\u0027exploitation.",
+                      "answer":  880000
+                  },
+                  {
+                      "ref":  "B17",
+                      "explanation":  "Total des charges financieres.",
+                      "answer":  21000
+                  },
+                  {
+                      "ref":  "D17",
+                      "explanation":  "Aucun produit financier : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "B24",
+                      "explanation":  "Aucune charge exceptionnelle : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "D24",
+                      "explanation":  "Aucun produit exceptionnel : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "B25",
+                      "explanation":  "TOTAL DES CHARGES = 848 000 + 21 000.",
+                      "answer":  869000
+                  },
+                  {
+                      "ref":  "D25",
+                      "explanation":  "TOTAL DES PRODUITS.",
+                      "answer":  880000
+                  },
+                  {
+                      "ref":  "B26",
+                      "explanation":  "Benefice = 880 000 - 869 000 (cote charges).",
+                      "answer":  11000
+                  },
+                  {
+                      "ref":  "D26",
+                      "explanation":  "Pas de perte : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "ref":  "B27",
+                      "explanation":  "TOTAL GENERAL cote charges (charges + benefice).",
+                      "answer":  880000
+                  },
+                  {
+                      "ref":  "D27",
+                      "explanation":  "TOTAL GENERAL cote produits.",
+                      "answer":  880000
+                  }
+              ]
 }
