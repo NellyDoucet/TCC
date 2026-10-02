@@ -1,23 +1,179 @@
 {
-  "id": "bilan-app-2",
-  "title": "Application 2 - Le Bilan",
-  "intro": "Telechargez le fichier, completez le bilan (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "Bilan simplifié",
-  "type": "cells",
-  "cells": [
-    { "ref": "D5", "answer": 50000, "explanation": "Capital." },
-    { "ref": "D6", "answer": -12000, "explanation": "Perte." },
-    { "ref": "B8", "answer": 10000, "explanation": "Mobilier de bureaux." },
-    { "ref": "B11", "answer": 10000, "explanation": "TOTAL DE L'ACTIF IMMOBILISE." },
-    { "ref": "D11", "answer": 38000, "explanation": "TOTAL DES CAPITAUX PROPRES = 50 000 - 12 000." },
-    { "ref": "B13", "answer": 135000, "explanation": "Stocks de marchandises." },
-    { "ref": "D13", "answer": 120000, "explanation": "Dettes fournisseurs." },
-    { "ref": "B14", "answer": 23000, "explanation": "Caisse." },
-    { "ref": "D14", "answer": 30000, "explanation": "Emprunt." },
-    { "ref": "B15", "answer": 20000, "explanation": "Creances clients." },
-    { "ref": "B16", "answer": 178000, "explanation": "TOTAL DE L'ACTIF CIRCULANT." },
-    { "ref": "D16", "answer": 150000, "explanation": "TOTAL DES DETTES." },
-    { "ref": "B17", "answer": 188000, "explanation": "TOTAL GENERAL cote actif." },
-    { "ref": "D17", "answer": 188000, "explanation": "TOTAL GENERAL cote passif." }
-  ]
+    "id":  "bilan-app-2",
+    "title":  "Application 2 - Le Bilan",
+    "intro":  "Telechargez le fichier, completez le tableau (libelles et montants dans la bonne categorie, puis totaux), enregistrez-le, puis deposez-le ci-dessous.",
+    "sheet":  "Bilan simplifié",
+    "type":  "cells",
+    "zones":  [
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "name":  "Immobilisations corporelles",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  8,
+                      "labelCol":  "A",
+                      "rowFrom":  8,
+                      "entries":  [
+                                      {
+                                          "label":  "Mobilier de bureaux",
+                                          "explanation":  "Mobilier de bureaux.",
+                                          "amounts":  [
+                                                          10000
+                                                      ],
+                                          "keywords":  [
+                                                           "mobilier"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "name":  "Actif circulant",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  15,
+                      "labelCol":  "A",
+                      "rowFrom":  13,
+                      "entries":  [
+                                      {
+                                          "label":  "Stocks de marchandises",
+                                          "explanation":  "Stocks de marchandises.",
+                                          "amounts":  [
+                                                          135000
+                                                      ],
+                                          "keywords":  [
+                                                           "stock",
+                                                           "marchandise"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Caisse",
+                                          "explanation":  "Caisse.",
+                                          "amounts":  [
+                                                          23000
+                                                      ],
+                                          "keywords":  [
+                                                           "caisse"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Creances clients",
+                                          "explanation":  "Creances clients.",
+                                          "amounts":  [
+                                                          20000
+                                                      ],
+                                          "keywords":  [
+                                                           "client",
+                                                           "creance"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "name":  "Capitaux propres",
+                      "amountCols":  [
+                                         "D"
+                                     ],
+                      "rowTo":  10,
+                      "labelCol":  "C",
+                      "rowFrom":  5,
+                      "entries":  [
+                                      {
+                                          "label":  "Capital",
+                                          "explanation":  "Capital.",
+                                          "amounts":  [
+                                                          50000
+                                                      ],
+                                          "keywords":  [
+                                                           "capital"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Perte",
+                                          "explanation":  "Resultat de l\u0027exercice : perte.",
+                                          "signFree":  true,
+                                          "amounts":  [
+                                                          -12000
+                                                      ],
+                                          "keywords":  [
+                                                           "perte",
+                                                           "resultat"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "name":  "Dettes",
+                      "amountCols":  [
+                                         "D"
+                                     ],
+                      "rowTo":  15,
+                      "labelCol":  "C",
+                      "rowFrom":  13,
+                      "entries":  [
+                                      {
+                                          "label":  "Dettes fournisseurs",
+                                          "explanation":  "Dettes fournisseurs.",
+                                          "amounts":  [
+                                                          120000
+                                                      ],
+                                          "keywords":  [
+                                                           "fournisseur"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Emprunt",
+                                          "explanation":  "Emprunt a long terme.",
+                                          "amounts":  [
+                                                          30000
+                                                      ],
+                                          "keywords":  [
+                                                           "emprunt"
+                                                       ]
+                                      }
+                                  ]
+                  }
+              ],
+    "cells":  [
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "ref":  "B11",
+                      "explanation":  "TOTAL DE L\u0027ACTIF IMMOBILISE.",
+                      "answer":  10000
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "ref":  "D11",
+                      "explanation":  "TOTAL DES CAPITAUX PROPRES = 50 000 - 12 000.",
+                      "answer":  38000
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "ref":  "B16",
+                      "explanation":  "TOTAL DE L\u0027ACTIF CIRCULANT.",
+                      "answer":  178000
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "ref":  "D16",
+                      "explanation":  "TOTAL DES DETTES.",
+                      "answer":  150000
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "ref":  "B17",
+                      "explanation":  "TOTAL GENERAL cote actif.",
+                      "answer":  188000
+                  },
+                  {
+                      "sheet":  "Bilan simplifié",
+                      "ref":  "D17",
+                      "explanation":  "TOTAL GENERAL cote passif.",
+                      "answer":  188000
+                  }
+              ]
 }

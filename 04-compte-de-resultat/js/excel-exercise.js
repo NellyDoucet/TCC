@@ -41,36 +41,45 @@
   function gradeZone(workbook, defaultSheetName, zone) {
     var sheetName = zone.sheet && workbook.SheetNames.indexOf(zone.sheet) !== -1 ? zone.sheet : defaultSheetName;
     var sheet = workbook.Sheets[sheetName];
+    var cols = zone.amountCols || [zone.amountCol];
     var rows = [];
     for (var r = zone.rowFrom; r <= zone.rowTo; r++) {
-      var amount = numericValue(sheet[zone.amountCol + r]);
+      var amounts = cols.map(function (c) { return numericValue(sheet[c + r]); });
       var labelCell = sheet[zone.labelCol + r];
       var label = labelCell ? normalize(labelCell.v) : '';
-      if (amount !== null || label !== '') {
-        rows.push({ amount: amount, label: label, used: false });
+      if (label !== '' || amounts.some(function (a) { return a !== null; })) {
+        rows.push({ amounts: amounts, label: label, used: false });
       }
     }
     return zone.entries.map(function (entry) {
-      var tol = relTolerance(entry.amount);
+      var expected = entry.amounts || [entry.amount];
+      var shown = expected.filter(function (a) { return a !== null; }).join(' / ');
       var name = zone.name + ' : ' + entry.label;
       var amountMatch = null;
       var full = null;
       rows.forEach(function (row) {
-        if (row.used || row.amount === null || Math.abs(row.amount - entry.amount) > tol) { return; }
+        if (row.used) { return; }
+        var same = expected.every(function (exp, i) {
+          if (exp === null) { return true; }
+          var got = row.amounts[i];
+          if (got === null) { return false; }
+          if (entry.signFree) { return Math.abs(Math.abs(got) - Math.abs(exp)) <= relTolerance(exp); }
+          return Math.abs(got - exp) <= relTolerance(exp);
+        });
+        if (!same) { return; }
         if (!amountMatch) { amountMatch = row; }
         var labelOk = entry.keywords.some(function (k) { return row.label.indexOf(k) !== -1; });
         if (!full && labelOk) { full = row; }
       });
-      var found = full || null;
-      if (found) {
-        found.used = true;
-        return { name: name, expected: entry.amount, got: found.amount, ok: true, explanation: entry.explanation };
+      if (full) {
+        full.used = true;
+        return { name: name, expected: shown, got: shown, ok: true, explanation: entry.explanation };
       }
       if (amountMatch) {
         amountMatch.used = true;
-        return { name: name, expected: entry.amount, got: amountMatch.amount, ok: false, reason: 'libelle', explanation: entry.explanation };
+        return { name: name, expected: shown, got: shown, ok: false, reason: 'libelle', explanation: entry.explanation };
       }
-      return { name: name, expected: entry.amount, got: null, ok: false, reason: 'montant', explanation: entry.explanation };
+      return { name: name, expected: shown, got: null, ok: false, reason: 'montant', explanation: entry.explanation };
     });
   }
 

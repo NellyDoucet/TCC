@@ -1,36 +1,337 @@
 {
-  "id": "bilan-app-1",
-  "title": "Application 1 - Le Bilan (entreprise IKOM)",
-  "intro": "Telechargez le fichier, completez le bilan (colonnes B et D), enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "Feuil1",
-  "type": "cells",
-  "cells": [
-    { "ref": "B6", "answer": 37500, "explanation": "Fonds commercial." },
-    { "ref": "D5", "answer": 50000, "explanation": "Capital." },
-    { "ref": "D6", "answer": -7700, "explanation": "Resultat (perte)." },
-    { "ref": "D7", "answer": 64200, "explanation": "Reserves." },
-    { "ref": "B8", "answer": 132900, "explanation": "Constructions." },
-    { "ref": "B9", "answer": 67400, "explanation": "Machines." },
-    { "ref": "B10", "answer": 8500, "explanation": "Materiels informatiques." },
-    { "ref": "B11", "answer": 21300, "explanation": "Terrains." },
-    { "ref": "B12", "answer": 19100, "explanation": "Vehicules de transport." },
-    { "ref": "B14", "answer": 11800, "explanation": "Prets." },
-    { "ref": "B15", "answer": 298500, "explanation": "TOTAL DE L'ACTIF IMMOBILISE." },
-    { "ref": "D15", "answer": 106500, "explanation": "TOTAL DES CAPITAUX PROPRES." },
-    { "ref": "B17", "answer": 13100, "explanation": "Autres creances." },
-    { "ref": "D17", "answer": 23900, "explanation": "Autres dettes." },
-    { "ref": "B18", "answer": 17400, "explanation": "Argent en banque." },
-    { "ref": "D18", "answer": 7600, "explanation": "Dettes envers l'Etat." },
-    { "ref": "B19", "answer": 1700, "explanation": "Argent en caisse." },
-    { "ref": "D19", "answer": 57300, "explanation": "Dettes fournisseurs." },
-    { "ref": "B20", "answer": 42900, "explanation": "Creance clients." },
-    { "ref": "D20", "answer": 196800, "explanation": "Emprunts." },
-    { "ref": "B21", "answer": 9200, "explanation": "Stocks de matieres premieres." },
-    { "ref": "D21", "answer": 9100, "explanation": "Dettes envers organismes sociaux." },
-    { "ref": "B22", "answer": 18400, "explanation": "Stocks de produits finis." },
-    { "ref": "B23", "answer": 102700, "explanation": "TOTAL DE L'ACTIF CIRCULANT." },
-    { "ref": "D23", "answer": 294700, "explanation": "TOTAL DES DETTES." },
-    { "ref": "B24", "answer": 401200, "explanation": "TOTAL GENERAL cote actif." },
-    { "ref": "D24", "answer": 401200, "explanation": "TOTAL GENERAL cote passif." }
-  ]
+    "id":  "bilan-app-1",
+    "title":  "Application 1 - Le Bilan (entreprise IKOM)",
+    "intro":  "Telechargez le fichier, completez le tableau (libelles et montants dans la bonne categorie, puis totaux), enregistrez-le, puis deposez-le ci-dessous.",
+    "sheet":  "Feuil1",
+    "type":  "cells",
+    "zones":  [
+                  {
+                      "sheet":  "Feuil1",
+                      "name":  "Immobilisations incorporelles",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  6,
+                      "labelCol":  "A",
+                      "rowFrom":  5,
+                      "entries":  [
+                                      {
+                                          "label":  "Fonds commercial",
+                                          "explanation":  "Fonds commercial.",
+                                          "amounts":  [
+                                                          37500
+                                                      ],
+                                          "keywords":  [
+                                                           "commercial",
+                                                           "fonds"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "name":  "Immobilisations corporelles",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  12,
+                      "labelCol":  "A",
+                      "rowFrom":  8,
+                      "entries":  [
+                                      {
+                                          "label":  "Constructions",
+                                          "explanation":  "Constructions.",
+                                          "amounts":  [
+                                                          132900
+                                                      ],
+                                          "keywords":  [
+                                                           "construction"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Machines",
+                                          "explanation":  "Machines.",
+                                          "amounts":  [
+                                                          67400
+                                                      ],
+                                          "keywords":  [
+                                                           "machine"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Materiels informatiques",
+                                          "explanation":  "Materiels informatiques.",
+                                          "amounts":  [
+                                                          8500
+                                                      ],
+                                          "keywords":  [
+                                                           "informatique",
+                                                           "materiel"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Terrains",
+                                          "explanation":  "Terrains.",
+                                          "amounts":  [
+                                                          21300
+                                                      ],
+                                          "keywords":  [
+                                                           "terrain"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Vehicules de transport",
+                                          "explanation":  "Vehicules de transport.",
+                                          "amounts":  [
+                                                          19100
+                                                      ],
+                                          "keywords":  [
+                                                           "vehicule",
+                                                           "transport"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "name":  "Immobilisations financieres",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  14,
+                      "labelCol":  "A",
+                      "rowFrom":  14,
+                      "entries":  [
+                                      {
+                                          "label":  "Prets",
+                                          "explanation":  "Prets.",
+                                          "amounts":  [
+                                                          11800
+                                                      ],
+                                          "keywords":  [
+                                                           "pret"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "name":  "Actif circulant",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  22,
+                      "labelCol":  "A",
+                      "rowFrom":  17,
+                      "entries":  [
+                                      {
+                                          "label":  "Autres creances",
+                                          "explanation":  "Autres creances.",
+                                          "amounts":  [
+                                                          13100
+                                                      ],
+                                          "keywords":  [
+                                                           "autre",
+                                                           "creance"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Argent en banque",
+                                          "explanation":  "Argent en banque.",
+                                          "amounts":  [
+                                                          17400
+                                                      ],
+                                          "keywords":  [
+                                                           "banque"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Argent en caisse",
+                                          "explanation":  "Argent en caisse.",
+                                          "amounts":  [
+                                                          1700
+                                                      ],
+                                          "keywords":  [
+                                                           "caisse"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Creance clients",
+                                          "explanation":  "Creances clients.",
+                                          "amounts":  [
+                                                          42900
+                                                      ],
+                                          "keywords":  [
+                                                           "client"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Stocks de matieres premieres",
+                                          "explanation":  "Stocks de matieres premieres.",
+                                          "amounts":  [
+                                                          9200
+                                                      ],
+                                          "keywords":  [
+                                                           "matiere"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Stocks de produits finis",
+                                          "explanation":  "Stocks de produits finis.",
+                                          "amounts":  [
+                                                          18400
+                                                      ],
+                                          "keywords":  [
+                                                           "produit",
+                                                           "fini"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "name":  "Capitaux propres",
+                      "amountCols":  [
+                                         "D"
+                                     ],
+                      "rowTo":  14,
+                      "labelCol":  "C",
+                      "rowFrom":  5,
+                      "entries":  [
+                                      {
+                                          "label":  "Capital",
+                                          "explanation":  "Capital.",
+                                          "amounts":  [
+                                                          50000
+                                                      ],
+                                          "keywords":  [
+                                                           "capital"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Resultat (perte)",
+                                          "explanation":  "Resultat : perte.",
+                                          "signFree":  true,
+                                          "amounts":  [
+                                                          -7700
+                                                      ],
+                                          "keywords":  [
+                                                           "resultat",
+                                                           "perte"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Reserves",
+                                          "explanation":  "Reserves.",
+                                          "amounts":  [
+                                                          64200
+                                                      ],
+                                          "keywords":  [
+                                                           "reserve"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "name":  "Dettes",
+                      "amountCols":  [
+                                         "D"
+                                     ],
+                      "rowTo":  22,
+                      "labelCol":  "C",
+                      "rowFrom":  17,
+                      "entries":  [
+                                      {
+                                          "label":  "Autres dettes",
+                                          "explanation":  "Autres dettes.",
+                                          "amounts":  [
+                                                          23900
+                                                      ],
+                                          "keywords":  [
+                                                           "autre"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Dettes envers l\u0027Etat",
+                                          "explanation":  "Dettes envers l\u0027Etat.",
+                                          "amounts":  [
+                                                          7600
+                                                      ],
+                                          "keywords":  [
+                                                           "etat"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Dettes fournisseurs",
+                                          "explanation":  "Dettes fournisseurs.",
+                                          "amounts":  [
+                                                          57300
+                                                      ],
+                                          "keywords":  [
+                                                           "fournisseur"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Emprunts",
+                                          "explanation":  "Emprunts.",
+                                          "amounts":  [
+                                                          196800
+                                                      ],
+                                          "keywords":  [
+                                                           "emprunt"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Dettes envers organismes sociaux",
+                                          "explanation":  "Dettes envers les organismes sociaux.",
+                                          "amounts":  [
+                                                          9100
+                                                      ],
+                                          "keywords":  [
+                                                           "social",
+                                                           "organisme"
+                                                       ]
+                                      }
+                                  ]
+                  }
+              ],
+    "cells":  [
+                  {
+                      "sheet":  "Feuil1",
+                      "ref":  "B15",
+                      "explanation":  "TOTAL DE L\u0027ACTIF IMMOBILISE.",
+                      "answer":  298500
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "ref":  "D15",
+                      "explanation":  "TOTAL DES CAPITAUX PROPRES.",
+                      "answer":  106500
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "ref":  "B23",
+                      "explanation":  "TOTAL DE L\u0027ACTIF CIRCULANT.",
+                      "answer":  102700
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "ref":  "D23",
+                      "explanation":  "TOTAL DES DETTES.",
+                      "answer":  294700
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "ref":  "B24",
+                      "explanation":  "TOTAL GENERAL cote actif.",
+                      "answer":  401200
+                  },
+                  {
+                      "sheet":  "Feuil1",
+                      "ref":  "D24",
+                      "explanation":  "TOTAL GENERAL cote passif.",
+                      "answer":  401200
+                  }
+              ]
 }

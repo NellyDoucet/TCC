@@ -1,88 +1,714 @@
 {
-  "id": "bilan-tp",
-  "title": "TP - La Baguette Magique pour Tous",
-  "intro": "Telechargez le fichier, completez le compte de resultat ET le bilan a partir des informations comptables fournies, enregistrez-le, puis deposez-le ci-dessous pour une correction automatique.",
-  "sheet": "COMPTE DE RESULTAT",
-  "type": "cells",
-  "cells": [
-    { "ref": "B5", "sheet": "COMPTE DE RESULTAT", "answer": 85000, "explanation": "Achats de farine." },
-    { "ref": "D5", "sheet": "COMPTE DE RESULTAT", "answer": 310000, "explanation": "Ventes de pains et viennoiseries." },
-    { "ref": "B6", "sheet": "COMPTE DE RESULTAT", "answer": 22000, "explanation": "Achats de sucre et beurre." },
-    { "ref": "D6", "sheet": "COMPTE DE RESULTAT", "answer": 95000, "explanation": "Ventes de patisseries." },
-    { "ref": "B7", "sheet": "COMPTE DE RESULTAT", "answer": 9200, "explanation": "Achats non stockes (eau, electricite)." },
-    { "ref": "D7", "sheet": "COMPTE DE RESULTAT", "answer": 18000, "explanation": "Ventes de boissons." },
-    { "ref": "B8", "sheet": "COMPTE DE RESULTAT", "answer": 12000, "explanation": "Loyers." },
-    { "ref": "D8", "sheet": "COMPTE DE RESULTAT", "answer": 950, "explanation": "Variation de stock de produits finis." },
-    { "ref": "B9", "sheet": "COMPTE DE RESULTAT", "answer": 2400, "explanation": "Assurances." },
-    { "ref": "B10", "sheet": "COMPTE DE RESULTAT", "answer": 3200, "explanation": "Honoraires comptables." },
-    { "ref": "B11", "sheet": "COMPTE DE RESULTAT", "answer": 1150, "explanation": "Frais postaux et telecommunications." },
-    { "ref": "B12", "sheet": "COMPTE DE RESULTAT", "answer": 68000, "explanation": "Salaires et traitements." },
-    { "ref": "B13", "sheet": "COMPTE DE RESULTAT", "answer": 27500, "explanation": "Charges sociales." },
-    { "ref": "B14", "sheet": "COMPTE DE RESULTAT", "answer": -1200, "explanation": "Variation de stock de matieres premieres." },
-    { "ref": "B15", "sheet": "COMPTE DE RESULTAT", "answer": 7800, "explanation": "Dotations aux amortissements = 3 500 + 2 100 + 900 + 700 + 600." },
-    { "ref": "B16", "sheet": "COMPTE DE RESULTAT", "answer": 237050, "explanation": "Total des charges d'exploitation." },
-    { "ref": "D16", "sheet": "COMPTE DE RESULTAT", "answer": 423950, "explanation": "Total des produits d'exploitation." },
-    { "ref": "B18", "sheet": "COMPTE DE RESULTAT", "answer": 480, "explanation": "Frais bancaires." },
-    { "ref": "D18", "sheet": "COMPTE DE RESULTAT", "answer": 180, "explanation": "Produits financiers." },
-    { "ref": "B19", "sheet": "COMPTE DE RESULTAT", "answer": 600, "explanation": "Interets d'emprunt." },
-    { "ref": "B23", "sheet": "COMPTE DE RESULTAT", "answer": 1080, "explanation": "Total des charges financieres." },
-    { "ref": "D23", "sheet": "COMPTE DE RESULTAT", "answer": 180, "explanation": "Total des produits financiers." },
-    { "ref": "B25", "sheet": "COMPTE DE RESULTAT", "answer": 120, "explanation": "Charges exceptionnelles." },
-    { "ref": "D25", "sheet": "COMPTE DE RESULTAT", "answer": 320, "explanation": "Produits exceptionnels." },
-    { "ref": "B30", "sheet": "COMPTE DE RESULTAT", "answer": 120, "explanation": "Total des charges exceptionnelles." },
-    { "ref": "D30", "sheet": "COMPTE DE RESULTAT", "answer": 320, "explanation": "Total des produits exceptionnels." },
-    { "ref": "B31", "sheet": "COMPTE DE RESULTAT", "answer": 238250, "explanation": "TOTAL DES CHARGES." },
-    { "ref": "D31", "sheet": "COMPTE DE RESULTAT", "answer": 424450, "explanation": "TOTAL DES PRODUITS." },
-    { "ref": "B32", "sheet": "COMPTE DE RESULTAT", "answer": 186200, "explanation": "Benefice = 424 450 - 238 250." },
-    { "ref": "B33", "sheet": "COMPTE DE RESULTAT", "answer": 424450, "explanation": "TOTAL GENERAL cote charges." },
-    { "ref": "D33", "sheet": "COMPTE DE RESULTAT", "answer": 424450, "explanation": "TOTAL GENERAL cote produits." },
-
-    { "ref": "F5", "sheet": "BILAN ", "answer": 90000, "explanation": "Capital." },
-    { "ref": "B6", "sheet": "BILAN ", "answer": 215400, "explanation": "Fonds de commerce (brut)." },
-    { "ref": "D6", "sheet": "BILAN ", "answer": 215400, "explanation": "Fonds de commerce (net)." },
-    { "ref": "F6", "sheet": "BILAN ", "answer": 186200, "explanation": "Resultat, repris du compte de resultat." },
-    { "ref": "F7", "sheet": "BILAN ", "answer": 12000, "explanation": "Reserves." },
-    { "ref": "B9", "sheet": "BILAN ", "answer": 55000, "explanation": "Four professionnel (brut)." },
-    { "ref": "C9", "sheet": "BILAN ", "answer": 3500, "explanation": "Amortissement du four professionnel." },
-    { "ref": "D9", "sheet": "BILAN ", "answer": 51500, "explanation": "Four professionnel (net)." },
-    { "ref": "B10", "sheet": "BILAN ", "answer": 34000, "explanation": "Materiel de boulangerie (brut)." },
-    { "ref": "C10", "sheet": "BILAN ", "answer": 2100, "explanation": "Amortissement du materiel de boulangerie." },
-    { "ref": "D10", "sheet": "BILAN ", "answer": 31900, "explanation": "Materiel de boulangerie (net)." },
-    { "ref": "B11", "sheet": "BILAN ", "answer": 18000, "explanation": "Vehicule utilitaire (brut)." },
-    { "ref": "C11", "sheet": "BILAN ", "answer": 900, "explanation": "Amortissement du vehicule utilitaire." },
-    { "ref": "D11", "sheet": "BILAN ", "answer": 17100, "explanation": "Vehicule utilitaire (net)." },
-    { "ref": "B12", "sheet": "BILAN ", "answer": 4200, "explanation": "Materiel informatique (brut)." },
-    { "ref": "C12", "sheet": "BILAN ", "answer": 700, "explanation": "Amortissement du materiel informatique." },
-    { "ref": "D12", "sheet": "BILAN ", "answer": 3500, "explanation": "Materiel informatique (net)." },
-    { "ref": "B13", "sheet": "BILAN ", "answer": 6500, "explanation": "Mobilier (brut)." },
-    { "ref": "C13", "sheet": "BILAN ", "answer": 600, "explanation": "Amortissement du mobilier." },
-    { "ref": "D13", "sheet": "BILAN ", "answer": 5900, "explanation": "Mobilier (net)." },
-    { "ref": "B16", "sheet": "BILAN ", "answer": 333100, "explanation": "TOTAL DE L'ACTIF IMMOBILISE (brut)." },
-    { "ref": "C16", "sheet": "BILAN ", "answer": 7800, "explanation": "Total des amortissements." },
-    { "ref": "D16", "sheet": "BILAN ", "answer": 325300, "explanation": "TOTAL DE L'ACTIF IMMOBILISE (net)." },
-    { "ref": "F16", "sheet": "BILAN ", "answer": 288200, "explanation": "TOTAL DES CAPITAUX PROPRES." },
-    { "ref": "B18", "sheet": "BILAN ", "answer": 8600, "explanation": "Stock de matieres premieres." },
-    { "ref": "D18", "sheet": "BILAN ", "answer": 8600, "explanation": "Stock de matieres premieres (net)." },
-    { "ref": "F18", "sheet": "BILAN ", "answer": 6200, "explanation": "Dettes fiscales." },
-    { "ref": "B19", "sheet": "BILAN ", "answer": 5400, "explanation": "Stock de produits finis." },
-    { "ref": "D19", "sheet": "BILAN ", "answer": 5400, "explanation": "Stock de produits finis (net)." },
-    { "ref": "F19", "sheet": "BILAN ", "answer": 7400, "explanation": "Dettes sociales." },
-    { "ref": "B20", "sheet": "BILAN ", "answer": 14200, "explanation": "Clients." },
-    { "ref": "D20", "sheet": "BILAN ", "answer": 14200, "explanation": "Clients (net)." },
-    { "ref": "F20", "sheet": "BILAN ", "answer": 3800, "explanation": "TVA a decaisser (dettes fiscales)." },
-    { "ref": "B21", "sheet": "BILAN ", "answer": 2300, "explanation": "Creances diverses." },
-    { "ref": "D21", "sheet": "BILAN ", "answer": 2300, "explanation": "Creances diverses (net)." },
-    { "ref": "F21", "sheet": "BILAN ", "answer": 48000, "explanation": "Emprunt bancaire." },
-    { "ref": "B22", "sheet": "BILAN ", "answer": 18500, "explanation": "Banque." },
-    { "ref": "D22", "sheet": "BILAN ", "answer": 18500, "explanation": "Banque (net)." },
-    { "ref": "F22", "sheet": "BILAN ", "answer": 22800, "explanation": "Fournisseurs." },
-    { "ref": "B23", "sheet": "BILAN ", "answer": 2100, "explanation": "Caisse." },
-    { "ref": "D23", "sheet": "BILAN ", "answer": 2100, "explanation": "Caisse (net)." },
-    { "ref": "B24", "sheet": "BILAN ", "answer": 51100, "explanation": "TOTAL DE L'ACTIF CIRCULANT (brut)." },
-    { "ref": "D24", "sheet": "BILAN ", "answer": 51100, "explanation": "TOTAL DE L'ACTIF CIRCULANT (net)." },
-    { "ref": "F24", "sheet": "BILAN ", "answer": 88200, "explanation": "TOTAL DES DETTES." },
-    { "ref": "B25", "sheet": "BILAN ", "answer": 384200, "explanation": "TOTAL GENERAL actif (brut)." },
-    { "ref": "D25", "sheet": "BILAN ", "answer": 376400, "explanation": "TOTAL GENERAL actif (net)." },
-    { "ref": "F25", "sheet": "BILAN ", "answer": 376400, "explanation": "TOTAL GENERAL passif." }
-  ]
+    "id":  "bilan-tp",
+    "title":  "TP - La Baguette Magique pour Tous",
+    "intro":  "Telechargez le fichier, completez le tableau (libelles et montants dans la bonne categorie, puis totaux), enregistrez-le, puis deposez-le ci-dessous.",
+    "sheet":  "COMPTE DE RESULTAT",
+    "type":  "cells",
+    "zones":  [
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "name":  "Charges d\u0027exploitation",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  15,
+                      "labelCol":  "A",
+                      "rowFrom":  5,
+                      "entries":  [
+                                      {
+                                          "label":  "Achats de farine",
+                                          "explanation":  "Achats de farine.",
+                                          "amounts":  [
+                                                          85000
+                                                      ],
+                                          "keywords":  [
+                                                           "farine"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Achats de sucre et beurre",
+                                          "explanation":  "Achats de sucre et beurre.",
+                                          "amounts":  [
+                                                          22000
+                                                      ],
+                                          "keywords":  [
+                                                           "sucre",
+                                                           "beurre"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Achats non stockes",
+                                          "explanation":  "Achats non stockes (eau, electricite).",
+                                          "amounts":  [
+                                                          9200
+                                                      ],
+                                          "keywords":  [
+                                                           "non stocke",
+                                                           "eau",
+                                                           "electricite"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Loyers",
+                                          "explanation":  "Loyers.",
+                                          "amounts":  [
+                                                          12000
+                                                      ],
+                                          "keywords":  [
+                                                           "loyer"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Assurances",
+                                          "explanation":  "Assurances.",
+                                          "amounts":  [
+                                                          2400
+                                                      ],
+                                          "keywords":  [
+                                                           "assurance"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Honoraires comptables",
+                                          "explanation":  "Honoraires comptables.",
+                                          "amounts":  [
+                                                          3200
+                                                      ],
+                                          "keywords":  [
+                                                           "honoraire"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Frais postaux et telecommunications",
+                                          "explanation":  "Frais postaux et telecommunications.",
+                                          "amounts":  [
+                                                          1150
+                                                      ],
+                                          "keywords":  [
+                                                           "postaux",
+                                                           "telecom"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Salaires et traitements",
+                                          "explanation":  "Salaires et traitements.",
+                                          "amounts":  [
+                                                          68000
+                                                      ],
+                                          "keywords":  [
+                                                           "salaire"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Charges sociales",
+                                          "explanation":  "Charges sociales.",
+                                          "amounts":  [
+                                                          27500
+                                                      ],
+                                          "keywords":  [
+                                                           "social"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Variation de stock de matieres premieres",
+                                          "explanation":  "Variation de stock de matieres premieres.",
+                                          "amounts":  [
+                                                          -1200
+                                                      ],
+                                          "keywords":  [
+                                                           "variation"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Dotations aux amortissements",
+                                          "explanation":  "Dotations aux amortissements = 3 500 + 2 100 + 900 + 700 + 600.",
+                                          "amounts":  [
+                                                          7800
+                                                      ],
+                                          "keywords":  [
+                                                           "dotation",
+                                                           "amortissement"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "name":  "Produits d\u0027exploitation",
+                      "amountCols":  [
+                                         "D"
+                                     ],
+                      "rowTo":  15,
+                      "labelCol":  "C",
+                      "rowFrom":  5,
+                      "entries":  [
+                                      {
+                                          "label":  "Ventes de pains et viennoiseries",
+                                          "explanation":  "Ventes de pains et viennoiseries.",
+                                          "amounts":  [
+                                                          310000
+                                                      ],
+                                          "keywords":  [
+                                                           "pain",
+                                                           "viennoiserie"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Ventes de patisseries",
+                                          "explanation":  "Ventes de patisseries.",
+                                          "amounts":  [
+                                                          95000
+                                                      ],
+                                          "keywords":  [
+                                                           "patisserie"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Ventes de boissons",
+                                          "explanation":  "Ventes de boissons.",
+                                          "amounts":  [
+                                                          18000
+                                                      ],
+                                          "keywords":  [
+                                                           "boisson"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Variation de stock de produits finis",
+                                          "explanation":  "Variation de stock de produits finis.",
+                                          "amounts":  [
+                                                          950
+                                                      ],
+                                          "keywords":  [
+                                                           "variation"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "name":  "Charges financieres",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  22,
+                      "labelCol":  "A",
+                      "rowFrom":  18,
+                      "entries":  [
+                                      {
+                                          "label":  "Frais bancaires",
+                                          "explanation":  "Frais bancaires.",
+                                          "amounts":  [
+                                                          480
+                                                      ],
+                                          "keywords":  [
+                                                           "bancaire"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Interets d\u0027emprunt",
+                                          "explanation":  "Interets d\u0027emprunt.",
+                                          "amounts":  [
+                                                          600
+                                                      ],
+                                          "keywords":  [
+                                                           "interet"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "name":  "Produits financiers",
+                      "amountCols":  [
+                                         "D"
+                                     ],
+                      "rowTo":  22,
+                      "labelCol":  "C",
+                      "rowFrom":  18,
+                      "entries":  [
+                                      {
+                                          "label":  "Produits financiers",
+                                          "explanation":  "Produits financiers.",
+                                          "amounts":  [
+                                                          180
+                                                      ],
+                                          "keywords":  [
+                                                           "financier"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "name":  "Charges exceptionnelles",
+                      "amountCols":  [
+                                         "B"
+                                     ],
+                      "rowTo":  29,
+                      "labelCol":  "A",
+                      "rowFrom":  25,
+                      "entries":  [
+                                      {
+                                          "label":  "Charges exceptionnelles",
+                                          "explanation":  "Charges exceptionnelles.",
+                                          "amounts":  [
+                                                          120
+                                                      ],
+                                          "keywords":  [
+                                                           "exceptionnel"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "name":  "Produits exceptionnels",
+                      "amountCols":  [
+                                         "D"
+                                     ],
+                      "rowTo":  29,
+                      "labelCol":  "C",
+                      "rowFrom":  25,
+                      "entries":  [
+                                      {
+                                          "label":  "Produits exceptionnels",
+                                          "explanation":  "Produits exceptionnels.",
+                                          "amounts":  [
+                                                          320
+                                                      ],
+                                          "keywords":  [
+                                                           "exceptionnel"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "name":  "Immobilisations incorporelles",
+                      "amountCols":  [
+                                         "B",
+                                         "C",
+                                         "D"
+                                     ],
+                      "rowTo":  7,
+                      "labelCol":  "A",
+                      "rowFrom":  6,
+                      "entries":  [
+                                      {
+                                          "label":  "Fonds de commerce",
+                                          "explanation":  "Fonds de commerce.",
+                                          "amounts":  [
+                                                          215400,
+                                                          null,
+                                                          215400
+                                                      ],
+                                          "keywords":  [
+                                                           "commerce",
+                                                           "fonds"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "name":  "Immobilisations corporelles",
+                      "amountCols":  [
+                                         "B",
+                                         "C",
+                                         "D"
+                                     ],
+                      "rowTo":  13,
+                      "labelCol":  "A",
+                      "rowFrom":  9,
+                      "entries":  [
+                                      {
+                                          "label":  "Four professionnel",
+                                          "explanation":  "Four professionnel : brut, amortissement, net.",
+                                          "amounts":  [
+                                                          55000,
+                                                          3500,
+                                                          51500
+                                                      ],
+                                          "keywords":  [
+                                                           "four"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Materiel de boulangerie",
+                                          "explanation":  "Materiel de boulangerie : brut, amortissement, net.",
+                                          "amounts":  [
+                                                          34000,
+                                                          2100,
+                                                          31900
+                                                      ],
+                                          "keywords":  [
+                                                           "boulangerie"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Vehicule utilitaire",
+                                          "explanation":  "Vehicule utilitaire : brut, amortissement, net.",
+                                          "amounts":  [
+                                                          18000,
+                                                          900,
+                                                          17100
+                                                      ],
+                                          "keywords":  [
+                                                           "vehicule"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Materiel informatique",
+                                          "explanation":  "Materiel informatique : brut, amortissement, net.",
+                                          "amounts":  [
+                                                          4200,
+                                                          700,
+                                                          3500
+                                                      ],
+                                          "keywords":  [
+                                                           "informatique"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Mobilier",
+                                          "explanation":  "Mobilier : brut, amortissement, net.",
+                                          "amounts":  [
+                                                          6500,
+                                                          600,
+                                                          5900
+                                                      ],
+                                          "keywords":  [
+                                                           "mobilier"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "name":  "Actif circulant",
+                      "amountCols":  [
+                                         "B",
+                                         "C",
+                                         "D"
+                                     ],
+                      "rowTo":  23,
+                      "labelCol":  "A",
+                      "rowFrom":  18,
+                      "entries":  [
+                                      {
+                                          "label":  "Stock de matieres premieres",
+                                          "explanation":  "Stock de matieres premieres.",
+                                          "amounts":  [
+                                                          8600,
+                                                          null,
+                                                          8600
+                                                      ],
+                                          "keywords":  [
+                                                           "matiere"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Stock de produits finis",
+                                          "explanation":  "Stock de produits finis.",
+                                          "amounts":  [
+                                                          5400,
+                                                          null,
+                                                          5400
+                                                      ],
+                                          "keywords":  [
+                                                           "produit",
+                                                           "fini"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Clients",
+                                          "explanation":  "Clients.",
+                                          "amounts":  [
+                                                          14200,
+                                                          null,
+                                                          14200
+                                                      ],
+                                          "keywords":  [
+                                                           "client"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Creances diverses",
+                                          "explanation":  "Creances diverses.",
+                                          "amounts":  [
+                                                          2300,
+                                                          null,
+                                                          2300
+                                                      ],
+                                          "keywords":  [
+                                                           "creance"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Banque",
+                                          "explanation":  "Banque.",
+                                          "amounts":  [
+                                                          18500,
+                                                          null,
+                                                          18500
+                                                      ],
+                                          "keywords":  [
+                                                           "banque"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Caisse",
+                                          "explanation":  "Caisse.",
+                                          "amounts":  [
+                                                          2100,
+                                                          null,
+                                                          2100
+                                                      ],
+                                          "keywords":  [
+                                                           "caisse"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "name":  "Capitaux propres",
+                      "amountCols":  [
+                                         "F"
+                                     ],
+                      "rowTo":  15,
+                      "labelCol":  "E",
+                      "rowFrom":  5,
+                      "entries":  [
+                                      {
+                                          "label":  "Capital",
+                                          "explanation":  "Capital.",
+                                          "amounts":  [
+                                                          90000
+                                                      ],
+                                          "keywords":  [
+                                                           "capital"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Resultat",
+                                          "explanation":  "Resultat, repris du compte de resultat.",
+                                          "amounts":  [
+                                                          186200
+                                                      ],
+                                          "keywords":  [
+                                                           "resultat",
+                                                           "benefice"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Reserves",
+                                          "explanation":  "Reserves.",
+                                          "amounts":  [
+                                                          12000
+                                                      ],
+                                          "keywords":  [
+                                                           "reserve"
+                                                       ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "name":  "Dettes",
+                      "amountCols":  [
+                                         "F"
+                                     ],
+                      "rowTo":  23,
+                      "labelCol":  "E",
+                      "rowFrom":  18,
+                      "entries":  [
+                                      {
+                                          "label":  "Dettes fiscales",
+                                          "explanation":  "Dettes fiscales.",
+                                          "amounts":  [
+                                                          6200
+                                                      ],
+                                          "keywords":  [
+                                                           "fiscal"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Dettes sociales",
+                                          "explanation":  "Dettes sociales.",
+                                          "amounts":  [
+                                                          7400
+                                                      ],
+                                          "keywords":  [
+                                                           "social"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "TVA a decaisser",
+                                          "explanation":  "TVA a decaisser (dettes fiscales).",
+                                          "amounts":  [
+                                                          3800
+                                                      ],
+                                          "keywords":  [
+                                                           "tva"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Emprunt bancaire",
+                                          "explanation":  "Emprunt bancaire.",
+                                          "amounts":  [
+                                                          48000
+                                                      ],
+                                          "keywords":  [
+                                                           "emprunt"
+                                                       ]
+                                      },
+                                      {
+                                          "label":  "Fournisseurs",
+                                          "explanation":  "Fournisseurs.",
+                                          "amounts":  [
+                                                          22800
+                                                      ],
+                                          "keywords":  [
+                                                           "fournisseur"
+                                                       ]
+                                      }
+                                  ]
+                  }
+              ],
+    "cells":  [
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "B16",
+                      "explanation":  "Total des charges d\u0027exploitation.",
+                      "answer":  237050
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "D16",
+                      "explanation":  "Total des produits d\u0027exploitation.",
+                      "answer":  423950
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "B23",
+                      "explanation":  "Total des charges financieres.",
+                      "answer":  1080
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "D23",
+                      "explanation":  "Total des produits financiers.",
+                      "answer":  180
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "B30",
+                      "explanation":  "Total des charges exceptionnelles.",
+                      "answer":  120
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "D30",
+                      "explanation":  "Total des produits exceptionnels.",
+                      "answer":  320
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "B31",
+                      "explanation":  "TOTAL DES CHARGES.",
+                      "answer":  238250
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "D31",
+                      "explanation":  "TOTAL DES PRODUITS.",
+                      "answer":  424450
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "B32",
+                      "explanation":  "Benefice = 424 450 - 238 250.",
+                      "answer":  186200
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "D32",
+                      "explanation":  "Pas de perte : laisser vide.",
+                      "answer":  0
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "B33",
+                      "explanation":  "TOTAL GENERAL cote charges.",
+                      "answer":  424450
+                  },
+                  {
+                      "sheet":  "COMPTE DE RESULTAT",
+                      "ref":  "D33",
+                      "explanation":  "TOTAL GENERAL cote produits.",
+                      "answer":  424450
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "B16",
+                      "explanation":  "TOTAL DE L\u0027ACTIF IMMOBILISE (brut).",
+                      "answer":  333100
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "C16",
+                      "explanation":  "Total des amortissements.",
+                      "answer":  7800
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "D16",
+                      "explanation":  "TOTAL DE L\u0027ACTIF IMMOBILISE (net).",
+                      "answer":  325300
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "F16",
+                      "explanation":  "TOTAL DES CAPITAUX PROPRES.",
+                      "answer":  288200
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "B24",
+                      "explanation":  "TOTAL DE L\u0027ACTIF CIRCULANT (brut).",
+                      "answer":  51100
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "D24",
+                      "explanation":  "TOTAL DE L\u0027ACTIF CIRCULANT (net).",
+                      "answer":  51100
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "F24",
+                      "explanation":  "TOTAL DES DETTES.",
+                      "answer":  88200
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "B25",
+                      "explanation":  "TOTAL GENERAL actif (brut).",
+                      "answer":  384200
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "D25",
+                      "explanation":  "TOTAL GENERAL actif (net).",
+                      "answer":  376400
+                  },
+                  {
+                      "sheet":  "BILAN ",
+                      "ref":  "F25",
+                      "explanation":  "TOTAL GENERAL passif.",
+                      "answer":  376400
+                  }
+              ]
 }
